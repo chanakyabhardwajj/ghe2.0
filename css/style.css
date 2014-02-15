@@ -1,3 +1,79 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-right.active {
+        right: 50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left.active {
+        left: 50%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+        background-color: #fff;
+        color: white;
+        height: 100%;
+        border-right: 1px solid #ccc;
+    }
+
+    .sidebar-offcanvas ul{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .sidebar-offcanvas a {
+        color: #1abc9c;
+        padding: 5px;
+        font-size: 13px;
+        text-shadow: none;
+        font-weight: 700;
+    }
+
+    .sidebar-offcanvas a {
+        padding: 10px 10px;
+    }
+
+    .sidebar-offcanvas a:hover, .sidebar-offcanvas a:active{
+        background : transparent;
+        border-bottom: 3px solid #1abc9c !important;
+    }
+}
+@media(min-width:768px){
+    .sidebar-offcanvas {
+        display: none;
+    }
+}
+
 /*Common Classes*/
 .white{
     color:#f8f8f8;
@@ -27,24 +103,43 @@
     margin-top: 40px;
 }
 
+.both{
+    clear: both;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-bottom: 40px;
     color: #363636;
-    background-color: #f8f8f8;
-    font-family: "Lato", sans-serif !important;
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
-
-
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
 
+#header{
+    background : #1abc9c;
+    margin: 0;
+    height: 110px;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #1abc9c;
+    border-color: transparent;
+    border: none;
+    color: white !important;
+}
+
+.navbar{
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.navbar-collapse{
+    margin-bottom: 20px;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -59,40 +154,130 @@ body {
 
 .navbar a{
     text-decoration: none;
-    color: #363636;
+    color: white;
     font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar ul{
+    margin-top:30px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 #navLogo{
-    width: 50px;
+    width: 80px;
 }
 
-.navbar-nav{
-    padding-top: 14px;
+.navbar-header button{
+    background-color: white;
 }
 
-/*TITLE BLOCK
+.navbar-header .icon-bar{
+    background-color: #000000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    padding: 12px 5px 5px;
+    font-size: 16px;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+.nav>li>a {
+    padding: 10px 10px;
+}
+
+.nav>li>a:hover, .nav>li>a:active{
+    background : transparent;
+    border-bottom: 3px solid white;
+}
+
+@media (max-width: 768px) {
+    #header{
+        height:50px;
+    }
+}
+
+/*Page Title Box
 -------------------------------------------------- */
-#titleBlock{
+#pageTitle{
     position: absolute;
-    top: 180px;
-    z-index: 99;
+    top:200px;
+    left:0;
+    width:100%;
+    margin:auto;
     text-align: center;
-    width: 500px;
-    padding: 20px;
-    color: white;
-    background-color: rgba(40,40,40,0.3);
-    margin-left: -250px;
-    left: 50%;
+    padding: 10px;
+    z-index: 10;
+    display: table;
 }
+
+#pageTitle h1{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 0 1px 2px rgba(0,0,0,.9);
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+@media(max-width:500px){
+    #pageTitle{
+        position: static;
+        padding: 50px 0;
+    }
+
+    #pageTitle h1{
+        font-size: 35px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        color: black;
+        font-weight: 500;
+        text-shadow: none;
+    }
+}
+@media(max-width:767px){
+    #pageTitle{
+        top:100px;
+    }
+
+    #pageTitle h1{
+        font-size: 40px;
+    }
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+#myCarousel{
+    margin-top: -20px;
+}
+
+@media(max-width:767px){
+    #myCarousel{
+        margin-top: 0px;
+    }
+
+    .carousel-indicators {
+        bottom: 100px;
+    }
+}
 
 /* Carousel base class */
 .carousel {
-    height: 600px;
-    margin-bottom: 60px;
+    max-height: 600px;
+    margin-bottom: 30px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -101,21 +286,36 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 600px;
+    max-height: 600px;
+    width: 100%;
     background-color: #f8f8f8;
 }
 
 .carousel-inner > .item > img {
     margin:auto;
+    width: 100%;
 }
 
 /*Over-rides to the base bootstrap.css*/
 .carousel-control.left, .carousel-control.right{
     background-image: none;
-    color: #363636;
+    color: #fff;
     opacity: 1;
-    background-color: #f8f8f8;
+    background-color: transparent;
+    display: none;
 }
+
+.carousel-indicators {
+    bottom: 30px;
+}
+
+@media(max-width:500px){
+    .carousel{
+        display: none;
+    }
+}
+
+
 
 
 
@@ -127,6 +327,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -134,8 +335,13 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-.marketing h2 {
-    font-weight: normal;
+
+.marketing h2,h3,h4 {
+    font-weight: 700;
+}
+
+.marketing h3 {
+    text-align: center;
 }
 .marketing .col-lg-4 p {
     margin-left: 10px;
@@ -147,23 +353,63 @@ body {
 ------------------------- */
 .storyBox{
     display: none;
+    padding: 10px 0;
+    overflow: hidden;
 }
 
+.storyBoxAuthorImg{
+    width:140px;
+    float: left;
+    padding: 10px;
+}
 
+.storyBoxAuthorName{
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    width: 200px;
+    padding: 10px;
 
+}
 
-/* Featurettes
+.storyBoxAuthorDetails{
+}
+
+.storyBoxStory{
+    float: left;
+    clear: both;
+    padding: 10px;
+}
+
+/* INITIATIVES
 ------------------------- */
-
-.featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+.initiativeBox{
+    padding: 10px 0;
+    overflow: hidden;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
+.initiativeBox img{
+    width: 80px;
+    height: 80px;
+    margin:10px;
+}
+
+/* SOCIAL FEEDS
+------------------------- */
+.socialFeedBox{
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+
+/* TEAM PAGE
+------------------------- */
+.teamMembersBox h3{
     font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
+    padding: 20px;
 }
 
 
@@ -171,60 +417,26 @@ body {
 -------------------------------------------------- */
 #footer{
     margin-top:50px;
+    background : #1abc9c;
+    height: 110px;
+    padding-top:30px;
+    text-align: center;
 }
+
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+@media(max-width:767px){
+    .copyright{display:none;}
+}
+
 .contactIcon{
-    margin:5px 10px;
+    margin:10px 10px;
     padding: 5px;
     text-decoration: none;
 }
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-    /* Remove the edge padding needed for mobile */
-    .marketing {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-left:  15px;
-        padding-right: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-left:  0;
-        padding-right: 0;
-    }
-
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-
-
