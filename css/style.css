@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.justify{
+    text-align: justify;
+}
+
 .auto{
     margin: auto;
 }
@@ -47,6 +51,11 @@ body {
     overflow-x: hidden;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -59,7 +68,6 @@ body {
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     background-color: #1abc9c;
     border-color: transparent;
-    border: none;
     color: white !important;
 }
 
@@ -102,10 +110,10 @@ body {
 }
 
 #navLogo{
-    width: 100px;
+    width: 150px;
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 10px;
 }
 
 .navbar .container{
@@ -132,7 +140,7 @@ body {
     padding: 10px 10px;
 }
 
-.nav>li>a:hover, .nav>li>a:active{
+.nav>li.open>a, .nav>li>a:hover, .nav>li>a:active{
     background : transparent;
     border-bottom: 3px solid #fff !important;
 }
@@ -145,13 +153,54 @@ body {
     .navbar-toggle{
         margin-top:23px;
     }
+
+    #navLogo{
+        width: 100px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+}
+
+#header .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 120px;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #1abc9c;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    background-clip: padding-box;
+    color: white;
+    padding: 12px 5px 5px;
+
+}
+
+#header .dropdown-menu li a{
+    color: #ffffff;
+    font-size: 16px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-weight: 700;
+    text-align: left;
+}
+
+#header .dropdown-menu li a:hover, .dropdown-menu li a:active{
+    background: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 /*Page Title Box
 -------------------------------------------------- */
 #pageTitle{
     position: absolute;
-    top:-20px;
+    top:0px;
     width:100%;
     margin:auto;
     text-align: center;
@@ -203,7 +252,7 @@ body {
 }
 @media(max-width:767px){
     #pageTitle{
-        top:100px;
+        top:0px;
     }
 
     #pageTitle h1{
@@ -215,7 +264,7 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 #myCarousel{
-    margin-top: -20px;
+
 }
 
 @media(max-width:767px){
@@ -223,35 +272,35 @@ body {
         margin-top: 0px;
     }
 
-    .carousel-indicators {
+    #myCarousel .carousel-indicators {
         bottom: 100px;
     }
 }
 
 /* Carousel base class */
-.carousel {
+#myCarousel {
     max-height: 500px;
     margin-bottom: 30px;
 }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+#myCarousel .carousel-caption {
     z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
+#myCarousel .item {
     max-height: 500px;
     width: 100%;
     background-color: #f8f8f8;
 }
 
-.carousel-inner > .item > img {
+#myCarousel .carousel-inner > .item > img {
     margin:auto;
     width: 100%;
 }
 
 /*Over-rides to the base bootstrap.css*/
-.carousel-control.left, .carousel-control.right{
+#myCarousel .carousel-control.left, #myCarousel .carousel-control.right{
     background-image: none;
     color: #fff;
     opacity: 1;
@@ -259,12 +308,12 @@ body {
     display: none;
 }
 
-.carousel-indicators {
+#myCarousel .carousel-indicators {
     bottom: 30px;
 }
 
 @media(max-width:500px){
-    .carousel{
+    #myCarousel{
         display: none;
     }
 }
@@ -290,12 +339,19 @@ body {
     margin-bottom: 20px;
 }
 
-.marketing h2,h3,h4 {
-    font-weight: 700;
+.marketing h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.marketing h2 {
+    text-align: center;
+    font-size: 40px;
 }
 
 .marketing h3 {
     text-align: center;
+    font-size: 30px;
 }
 .marketing .col-lg-4 p {
     margin-left: 10px;
@@ -335,6 +391,10 @@ body {
     padding: 10px;
 }
 
+.storyBoxStory a{
+    text-decoration: none;
+}
+
 /* INITIATIVES
 ------------------------- */
 .initiativeBox{
@@ -342,11 +402,16 @@ body {
     overflow: hidden;
 }
 
-.initiativeBox img{
-    width: 80px;
-    height: 80px;
+.initiativeBox .initiativeImg{
+    width: 140px;
     margin:10px;
 }
+
+.initiativeBox .initiativeStory{
+    float: left;
+}
+
+
 
 /* SOCIAL FEEDS
 ------------------------- */
@@ -429,6 +494,26 @@ body {
 .impactBox{
     padding: 30px 10px;
     margin: auto;
+}
+
+
+/*2013
+------------------------- */
+@media(min-width:768px){
+    #carousal2013{
+        width:800px;
+        margin: auto;
+    }
+}
+
+#carousal2013 .carousel-control{
+    opacity: 1;
+    background-image: none;
+    background-color: transparent;
+}
+
+#carousal2013 .carousel-control.left, #carousal2013 .carousel-control.right{
+    display: block;
 }
 
 /* FOOTER CSS
@@ -525,6 +610,26 @@ body {
     }
 
     .sidebar-offcanvas a:hover, .sidebar-offcanvas a:active{}
+
+    .sidebar-offcanvas .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        background-clip: padding-box;
+        margin-left: 0;
+    }
+
+    .sidebar-offcanvas .dropdown-menu li a{
+        color: #1abc9c;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar-offcanvas .dropdown-menu li a:hover, .sidebar-offcanvas .dropdown-menu li a:active{
+        background: none;
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
 }
 @media(min-width:768px){
     .sidebar-offcanvas {
