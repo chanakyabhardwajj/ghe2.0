@@ -89,11 +89,11 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 15px;
 }
 
-.navbar a{
+#header .navbar a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .navbar ul{
@@ -111,14 +111,9 @@ h1,h2,h3,h4,h5,h6{
 
 #navLogo{
     width: 150px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
 }
 
-.navbar .container{
-    margin-left: 80px;
-}
+.navbar .container{}
 
 .navbar-header button{
     background-color: white;
@@ -128,7 +123,7 @@ h1,h2,h3,h4,h5,h6{
     background-color: #000000;
 }
 
-.navbar-default .navbar-nav>li>a {
+#header .navbar-default .navbar-nav>li>a {
     color: #ffffff;
     padding: 12px 5px 5px;
     font-size: 16px;
@@ -136,7 +131,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 700;
 }
 
-.nav>li>a {
+#header .nav>li>a {
     padding: 10px 10px;
 }
 
@@ -156,10 +151,21 @@ h1,h2,h3,h4,h5,h6{
 
     #navLogo{
         width: 100px;
-        position: absolute;
-        left: 10px;
-        top: 15px;
     }
+}
+
+@media (min-width: 1000px) {
+#header .navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    padding: 12px 5px 5px;
+    font-size: 22px;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+#header .nav>li>a {
+    padding: 10px 25px;
+}
 }
 
 #header .dropdown-menu {
@@ -279,7 +285,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Carousel base class */
 #myCarousel {
-    max-height: 500px;
+    /*max-height: 500px;*/
     margin-bottom: 30px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -289,7 +295,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Declare heights because of positioning of img element */
 #myCarousel .item {
-    max-height: 500px;
+    /*max-height: 500px;*/
     width: 100%;
     background-color: #f8f8f8;
 }
@@ -305,18 +311,18 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
     opacity: 1;
     background-color: transparent;
-    display: none;
+
 }
 
 #myCarousel .carousel-indicators {
     bottom: 30px;
 }
 
-@media(max-width:500px){
+/*@media(max-width:500px){
     #myCarousel{
         display: none;
     }
-}
+}*/
 
 
 
