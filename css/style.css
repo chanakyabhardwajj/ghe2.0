@@ -1,79 +1,3 @@
-/*
- * Off Canvas
- * --------------------------------------------------
- */
-@media screen and (max-width: 767px) {
-    .row-offcanvas {
-        position: relative;
-        -webkit-transition: all .25s ease-out;
-        -moz-transition: all .25s ease-out;
-        transition: all .25s ease-out;
-    }
-
-    .row-offcanvas-right {
-        right: 0;
-    }
-
-    .row-offcanvas-left {
-        left: 0;
-    }
-
-    .row-offcanvas-right
-    .sidebar-offcanvas {
-        right: -50%; /* 6 columns */
-    }
-
-    .row-offcanvas-left
-    .sidebar-offcanvas {
-        left: -50%; /* 6 columns */
-    }
-
-    .row-offcanvas-right.active {
-        right: 50%; /* 6 columns */
-    }
-
-    .row-offcanvas-left.active {
-        left: 50%; /* 6 columns */
-    }
-
-    .sidebar-offcanvas {
-        position: absolute;
-        top: 0;
-        width: 50%; /* 6 columns */
-        background-color: #fff;
-        color: white;
-        height: 100%;
-        border-right: 1px solid #ccc;
-    }
-
-    .sidebar-offcanvas ul{
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-
-    .sidebar-offcanvas a {
-        color: #1abc9c;
-        padding: 5px;
-        font-size: 13px;
-        text-shadow: none;
-        font-weight: 700;
-    }
-
-    .sidebar-offcanvas a {
-        padding: 10px 10px;
-    }
-
-    .sidebar-offcanvas a:hover, .sidebar-offcanvas a:active{
-        background : transparent;
-        border-bottom: 3px solid #1abc9c !important;
-    }
-}
-@media(min-width:768px){
-    .sidebar-offcanvas {
-        display: none;
-    }
-}
-
 /*Common Classes*/
 .white{
     color:#f8f8f8;
@@ -107,13 +31,18 @@
     clear: both;
 }
 
+.divider{
+    color:#eee;
+    margin:20px 0;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
     color: #363636;
-    background-color: #ffffff;
+    background-color: #fff;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
@@ -124,7 +53,7 @@ body {
 #header{
     background : #1abc9c;
     margin: 0;
-    height: 110px;
+    height: 100px;
 }
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
@@ -160,7 +89,7 @@ body {
 }
 
 .navbar ul{
-    margin-top:30px;
+    margin-top:20px;
 }
 
 .navbar .navbar-nav {
@@ -173,7 +102,14 @@ body {
 }
 
 #navLogo{
-    width: 80px;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.navbar .container{
+    margin-left: 80px;
 }
 
 .navbar-header button{
@@ -198,12 +134,16 @@ body {
 
 .nav>li>a:hover, .nav>li>a:active{
     background : transparent;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #fff !important;
 }
 
 @media (max-width: 768px) {
     #header{
-        height:50px;
+        height:80px;
+    }
+
+    .navbar-toggle{
+        margin-top:23px;
     }
 }
 
@@ -212,39 +152,53 @@ body {
 #pageTitle{
     position: absolute;
     top:200px;
-    left:0;
     width:100%;
     margin:auto;
     text-align: center;
     padding: 10px;
     z-index: 10;
     display: table;
+    background-color: rgba(100,100,100,0.3);
 }
 
-#pageTitle h1{
+#pageTitleContent{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+
+#pageTitle h1,h2{
     text-shadow: 0 1px 2px rgba(0,0,0,.9);
     color: white;
     font-weight: 700;
+}
+
+#pageTitle h1{
     font-size: 60px;
+}
+
+#pageTitle h2{
+    font-size: 40px;
 }
 
 @media(max-width:500px){
     #pageTitle{
         position: static;
         padding: 50px 0;
+        background-color:transparent;
+    }
+
+    #pageTitle h1,h2{
+        color: #1abc9c;
+        text-shadow: 0 2px 2px rgba(0,0,0,0.2);
     }
 
     #pageTitle h1{
         font-size: 35px;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        color: black;
-        font-weight: 500;
-        text-shadow: none;
+    }
+
+    #pageTitle h2{
+        font-size: 25px;
     }
 }
 @media(max-width:767px){
@@ -384,7 +338,7 @@ body {
 /* INITIATIVES
 ------------------------- */
 .initiativeBox{
-    padding: 10px 0;
+    padding: 10px;
     overflow: hidden;
 }
 
@@ -403,22 +357,65 @@ body {
 }
 
 
+/* ABOUT
+-------------------------------------------------- */
+.aboutBox{
+    padding: 30px 10px;
+    margin: auto;
+}
 
 
 /* TEAM PAGE
 ------------------------- */
+.teamMembersBox .row{
+    margin-top: 15px;
+}
 .teamMembersBox h3{
     font-weight: 300;
-    padding: 20px;
 }
 
+/* PRESS
+------------------------- */
+.pressBox{
+    padding: 30px 10px;
+    margin: auto;
+}
+.pressBox a {
+    text-decoration: none;
+}
+
+.pressBox .pressLogo{
+    width: 150px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.pressBox .pressLogo img{
+    width: 150px;
+}
+
+.pressBox .pressLink{
+    color: black;
+    margin-left: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* IMPACT
+------------------------- */
+
+.impactBox{
+    padding: 30px 10px;
+    margin: auto;
+}
 
 /* FOOTER CSS
 -------------------------------------------------- */
 #footer{
     margin-top:50px;
     background : #1abc9c;
-    height: 110px;
+    height: 100px;
     padding-top:30px;
     text-align: center;
 }
@@ -439,4 +436,77 @@ body {
     margin:10px 10px;
     padding: 5px;
     text-decoration: none;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+        left: -50%; /* 6 columns */
+    }
+
+    .row-offcanvas-right.active {
+        right: 50%; /* 6 columns */
+    }
+
+    .row-offcanvas-left.active {
+        left: 50%; /* 6 columns */
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: 50%; /* 6 columns */
+        background-color: #ededed;
+        color: white;
+        height: 100%;
+        border-right: 1px solid #ccc;
+    }
+
+    .sidebar-offcanvas ul{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .sidebar-offcanvas a {
+        color: #1abc9c;
+        padding: 5px;
+        font-size: 13px;
+        text-shadow: none;
+        font-weight: 700;
+    }
+
+    .sidebar-offcanvas a {
+        padding: 10px 10px;
+    }
+
+    .sidebar-offcanvas a:hover, .sidebar-offcanvas a:active{}
+}
+@media(min-width:768px){
+    .sidebar-offcanvas {
+        display: none;
+    }
 }
