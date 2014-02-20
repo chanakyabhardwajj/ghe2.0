@@ -7,6 +7,10 @@
     color: #363636;
 }
 
+.yellow{
+    color: #ffdc00 !important;
+}
+
 .center{
     text-align: center;
 }
@@ -109,11 +113,16 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 
+.navbar-brand{
+    padding: 0;
+}
 #navLogo{
-    width: 150px;
+    width: 100px;
 }
 
-.navbar .container{}
+#homeLogo{
+    width: 150px;
+}
 
 .navbar-header button{
     background-color: white;
@@ -145,12 +154,17 @@ h1,h2,h3,h4,h5,h6{
         height:80px;
     }
 
-    .navbar-toggle{
-        margin-top:23px;
+    #navLogo{
+        width: 80px;
     }
 
-    #navLogo{
+    #homeLogo{
         width: 100px;
+    }
+
+
+    .navbar-toggle{
+        margin-top:23px;
     }
 }
 
@@ -311,7 +325,7 @@ h1,h2,h3,h4,h5,h6{
     color: #fff;
     opacity: 1;
     background-color: transparent;
-
+    z-index: 99999999;
 }
 
 #myCarousel .carousel-indicators {
@@ -425,6 +439,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 10px 0;
     overflow: hidden;
     text-align: center;
+}
+
+.socialFeedBox .pressCollage{
+    width: 300px;
 }
 
 

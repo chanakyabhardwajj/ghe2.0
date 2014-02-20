@@ -31,7 +31,42 @@
 <body>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
     <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
-    <div id="header" class="navbar-wrapper"></div>
+    <div id="header" class="navbar-wrapper">
+        <div class="navbar" role="navigation">
+        <span id="logoBox">
+            <a class="navbar-brand" href="./index.html"><img id="navLogo" class="" src="./images/logoweb.png"></a>
+        </span>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="index"><a href="./index.html">Home</a></li>
+                        <li class="about active"><a href="./about.html">About Us</a></li>
+                        <li class="expeditions dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Expeditions<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./2013.html">Ladakh 2013</a></li>
+                                <li><a href="./2014.html">Ladakh 2014</a></li>
+                            </ul>
+                        </li>
+                        <li class="impact"><a href="./impact.html">Impact</a></li>
+                        <!--<li class="gallery" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Gallery</a></li>-->
+                        <li class="press"><a href="./press.html">Press</a></li>
+                        <li class="join yellow" data-toggle="modal" data-target="#myModal"><a class="yellow" href="#">Join Us</a></li>
+                        <li class="contact"><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="row row-offcanvas row-offcanvas-left ">
         <div class="col-xs-3 sidebar-offcanvas hide" id="sidebar" role="navigation"></div>
@@ -95,7 +130,13 @@
         </div>
     </div>
     <!-- FOOTER -->
-    <div id="footer" class=""></div>
+    <div id="footer" class="">
+        <div id="contactBox" class="row">
+            <a class="contactIcon" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook icon-2x"></em></a>
+            <a class="contactIcon" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter icon-2x"></em></a>
+            <a class="contactIcon" href="mailto:info@ghe.co.in"><em class="icon-envelope icon-2x"></em> info@ghe.co.in</a>
+        </div>
+    </div>
 
 
 

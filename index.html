@@ -28,14 +28,49 @@
 <body>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
     <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
-    <div id="header" class="navbar-wrapper"></div>
+    <div id="header" class="navbar-wrapper">
+        <div class="navbar" role="navigation">
+        <span id="logoBox">
+            <!--<a class="navbar-brand" href="./index.html"><img id="navLogo" class="" src="./images/logoweb.png"></a>-->
+        </span>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="index active"><a href="./index.html">Home</a></li>
+                        <li class="about"><a href="./about.html">About Us</a></li>
+                        <li class="expeditions dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Expeditions<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./2013.html">Ladakh 2013</a></li>
+                                <li><a href="./2014.html">Ladakh 2014</a></li>
+                            </ul>
+                        </li>
+                        <li class="impact"><a href="./impact.html">Impact</a></li>
+                        <!--<li class="gallery" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Gallery</a></li>-->
+                        <li class="press"><a href="./press.html">Press</a></li>
+                        <li class="join" data-toggle="modal" data-target="#myModal"><a class="yellow" href="#">Join Us</a></li>
+                        <li class="contact"><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row row-offcanvas row-offcanvas-left ">
         <div class="col-xs-3 sidebar-offcanvas hide" id="sidebar" role="navigation"></div>
 
         <div class="col-xs-12">
             <div id="pageTitle">
                 <div id="pageTitleContent">
-                    <img id="navLogo" class="" src="./images/logoweb.png">
+                    <img id="homeLogo" class="" src="./images/logoweb.png">
                     <h1>Global Himalayan Expedition</h1>
                     <h2>9th - 20th August 2014</h2>
                 </div>
@@ -139,7 +174,7 @@
 
                     </div>
                     <div id="initiativesBox" class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Initiatives</h3>
+                        <h3>Ongoing Initiatives</h3>
                         <div class="initiativeBox well">
                             <div class="pull-left">
                                 <img class="initiativeImg" src="./images/home/initiatives/ebase.jpg">
@@ -148,6 +183,7 @@
                                 <h4>Third Pole E-Base</h4>
                                 <p>Built in the Mahabodhi School campus in Leh, the E-Base is a fully equipped digital classroom, connected to the outside world with Wimax. It's an initiative focused on helping the children of Ladakh take on the world.
                                 </p>
+                                <a href="./impact.html#impactEbase">read more...</a>
                             </div>
                         </div>
                         <div class="initiativeBox well">
@@ -157,8 +193,10 @@
                             <div class="initiativeStory">
                                 <h4>Bringing Light to Sumda Chenmo</h4>
                                 <p>The GHE team presented the families in Sumda Chenmo, a remote village in Ladakh, with 15 solar lanterns, bringing light to a region, which had never seen electricity before.</p>
+                                <a href="./impact.html#impactSumda">read more...</a>
                             </div>
                         </div>
+                        <h3>Upcoming Initiatives</h3>
                         <div class="initiativeBox well">
                             <div class="pull-left">
                                 <img class="initiativeImg" src="./images/home/initiatives/grid.jpg">
@@ -167,16 +205,25 @@
                                 <h4>Himalayan Village Electrification</h4>
                                 <p>An ongoing project, to design and erect a microgrid , first in one pilot village, and later in more remote villages of Himalayas. The idea is to make the region self-sufficient in energy, one village at a time.
                                 </p>
+                                <a href="./impact.html#impactGrid">read more...</a>
                             </div>
                         </div>
                     </div>
                     <div id="socialFeedsBox" class="col-xs-12 col-sm-12 col-md-4">
-                        <h3>Social Feeds</h3>
+                        <h3>Keep in touch</h3>
                         <div class="socialFeedBox well">
                             <!--<img class="img-box" data-src="holder.js/140x140/social" alt="Generic placeholder image">
                             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
                             <div class="fb-like-box" data-href="https://www.facebook.com/GlobalHimalayanExpedition" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+                        </div>
+                        <div class="socialFeedBox well">
+                            <a class="twitter-timeline" href="https://twitter.com/GHE_Connect" data-widget-id="436503063168184321">Tweets</a>
+                        </div>
+
+                        <h3>In the news</h3>
+                        <div class="socialFeedBox well">
+                            <a href="./press.html"><img class="pressCollage" src="images/home/press.png"></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +231,13 @@
         </div>
     </div>
 
-    <div id="footer" class=""></div>
+    <div id="footer" class="">
+        <div id="contactBox" class="row">
+            <a class="contactIcon" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook icon-2x"></em></a>
+            <a class="contactIcon" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter icon-2x"></em></a>
+            <a class="contactIcon" href="mailto:info@ghe.co.in"><em class="icon-envelope icon-2x"></em> info@ghe.co.in</a>
+        </div>
+    </div>
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -198,6 +251,7 @@
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=618393514854846";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
