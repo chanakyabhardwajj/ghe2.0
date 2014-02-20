@@ -8,7 +8,7 @@ window.onload = function(){
     $('#sidebar').load('partials/sidebar.html');
 
 
-    $('#myModal').load('partials/joinmodal.html');
+    //$('#myModal').load('partials/joinmodal.html');
     $('#myUndecidedModal').load('partials/undecidedmodal.html');
 
 
