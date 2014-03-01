@@ -7,10 +7,7 @@ window.onload = function(){
 
     $('#sidebar').load('partials/sidebar.html');
 
-
-    //$('#myModal').load('partials/joinmodal.html');
     $('#myUndecidedModal').load('partials/undecidedmodal.html');
-
 
     //Cyclically display participant stories
     var storiesBox = $("#storiesBox");
@@ -23,7 +20,6 @@ window.onload = function(){
                 $(stories[(i+1)%stories.length]).fadeIn();
                 i++;
             });
-
         }, 5000);
     }
 };
