@@ -10,7 +10,7 @@ window.onload = function(){
     $('#myUndecidedModal').load('partials/undecidedmodal.html');
 
     //Cyclically display participant stories
-    var storiesBox = $("#storiesBox");
+    /*var storiesBox = $("#storiesBox");
     if(storiesBox.length>0){
         var stories = $("#storiesBox .storyBox");
         var i = 0;
@@ -21,5 +21,5 @@ window.onload = function(){
                 i++;
             });
         }, 5000);
-    }
+    }*/
 };

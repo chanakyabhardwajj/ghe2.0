@@ -29,7 +29,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        Email : info@ghe.co.in
+
+    </div>
     <div id="header" class="navbar-wrapper">
         <div class="navbar" role="navigation">
         <span id="logoBox">
@@ -50,17 +53,24 @@
                         <li class="index active"><a href="./index.html">Home</a></li>
                         <li class="about"><a href="./about.html">About Us</a></li>
                         <li class="expeditions dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Expeditions<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle">Expeditions<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="./2013.html">Ladakh 2013</a></li>
                                 <li><a href="./2014.html">Ladakh 2014</a></li>
                             </ul>
                         </li>
-                        <li class="impact"><a href="./impact.html">Impact</a></li>
-                        <!--<li class="gallery" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Gallery</a></li>-->
+
+                        <li class="impact dropdown">
+                            <a href="#" class="dropdown-toggle">Impact<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./impact.html#ongoing">Ongoing</a></li>
+                                <li><a href="./impact.html#upcoming">Upcoming</a></li>
+                            </ul>
+                        </li>
+
                         <li class="press"><a href="./press.html">Press</a></li>
                         <li class="join"><a class="yellow" href="./join.html">Join Us</a></li>
-                        <li class="contact"><a href="#footer">Contact</a></li>
+                        <li class="contact" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,7 +84,7 @@
                 <div id="pageTitleContent">
                     <img id="homeLogo" class="" src="./images/logoweb.png">
                     <h1>Global Himalayan Expedition</h1>
-                    <h2>9th - 20th August 2014</h2>
+                    <h2>10th - 21st August 2014</h2>
                 </div>
             </div>
 
@@ -143,7 +153,7 @@
                     <div id="storiesBox" class="col-xs-12 col-sm-12 col-md-4">
                         <h3>Participant Stories</h3>
                         <div class="storyBox well" style="display: block">
-                            <img class="storyBoxAuthorImg" src="images/home/participants/stephanie.png">
+                            <img class="storyBoxAuthorImg img-shadow img-responsive" src="images/home/participants/stephanie.png">
                             <div class="storyBoxAuthorName">
                                 <p>Stephanie Wolcott</p>
                                 <small class="storyBoxAuthorDetails">
@@ -153,18 +163,18 @@
                             <div class="storyBoxStory">..every step was worth it to experience such pristine, overwhelming beauty. Added to that, we had the pleasure to gift solar lanterns to each of the villagers at Sumda Chenmo, a village of six houses and a two-day walk from anywhere..</div>
                         </div>
                         <div class="storyBox well">
-                            <img class="storyBoxAuthorImg" src="images/home/participants/oli.png">
+                            <img class="storyBoxAuthorImg img-shadow img-responsive" src="images/home/participants/oli.png">
                             <div class="storyBoxAuthorName">
                                 <p>Oli Wheeldon</p>
                                 <small class="storyBoxAuthorDetails">
-                                    <b>Media Manager – 2041, Photographer, Explorer</b>
+                                    <b>Media Manager – GHE, 2041, Photographer, Explorer</b>
                                 </small>
                             </div>
                             <div class="storyBoxStory">
-                                <a href="http://2041.com/global-himalayan-expedition-pre-expedition-thoughts/">Having been to two very different wildernesses in the same year, the first untouched, the second containing and providing life for millions of people I can say that Antarctica is awakening, but Himalayas are enlightening</a></div>
+                                <!-- <a href="http://2041.com/global-himalayan-expedition-pre-expedition-thoughts/"> -->Having been to two very different wildernesses in the same year, the first untouched, the second containing and providing life for millions of people I can say that Antarctica is awakening, but Himalayas are enlightening<!-- </a> --></div>
                         </div>
                         <div class="storyBox well">
-                            <img class="storyBoxAuthorImg" src="images/home/participants/laura.png">
+                            <img class="storyBoxAuthorImg img-shadow img-responsive" src="images/home/participants/laura.png">
                             <div class="storyBoxAuthorName">
                                 <p>Laura Burling</p>
                                 <small class="storyBoxAuthorDetails">
@@ -179,7 +189,7 @@
                         <h3>Ongoing Initiatives</h3>
                         <div class="initiativeBox well">
                             <div class="pull-left">
-                                <img class="initiativeImg" src="./images/home/initiatives/ebase.jpg">
+                                <img class="initiativeImg img-shadow img-responsive" src="./images/home/initiatives/ebase.jpg">
                             </div>
                             <div class="initiativeStory">
                                 <h4>Third Pole E-Base</h4>
@@ -191,7 +201,7 @@
                         <h3>Upcoming Initiatives</h3>
                         <div class="initiativeBox well">
                             <div class="pull-left">
-                                <img class="initiativeImg" src="./images/home/initiatives/chj.jpg">
+                                <img class="initiativeImg img-shadow img-responsive" src="./images/home/initiatives/chj.jpg">
                             </div>
                             <div class="initiativeStory">
                                 <h4>The Clean Himalayan Journey</h4>

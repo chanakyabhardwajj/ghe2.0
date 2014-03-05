@@ -48,6 +48,11 @@
     width: 100%;
 }
 
+.img-shadow{
+    border: 0.5rem solid #eee;
+    box-shadow: 0 2px 4px 0 #99a3ad,inset 0 0 40px #eeeeee;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -61,7 +66,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 
 
@@ -102,7 +107,7 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
     color: white;
     /*font-weight: bold;*/
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .navbar ul{
@@ -179,19 +184,21 @@ h1,h2,h3,h4,h5,h6{
 #header .navbar-default .navbar-nav>li>a {
     color: #ffffff;
     padding: 12px 5px 5px;
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: none;
     font-weight: 700;
 }
 
 #header .nav>li>a {
-    padding: 10px 25px;
+    padding: 10px 15px;
 }
 }
 
+
+
 #header .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
     z-index: 1000;
     float: left;
@@ -209,6 +216,12 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+@media (min-width: 900px) {
+    #header .dropdown-menu {
+        width:174px;
+    }
+}
+
 #header .dropdown-menu li a{
     color: #ffffff;
     font-size: 16px;
@@ -222,6 +235,10 @@ h1,h2,h3,h4,h5,h6{
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 
 /*Page Title Box
 -------------------------------------------------- */
@@ -306,7 +323,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Carousel base class */
 #myCarousel {
-    /*max-height: 500px;*/
+    max-height: 500px;
     margin-bottom: 30px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -316,7 +333,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Declare heights because of positioning of img element */
 #myCarousel .item {
-    /*max-height: 500px;*/
+    max-height: 500px;
     width: 100%;
     background-color: #f8f8f8;
 }
@@ -356,7 +373,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .storyBox{
-    display: none;
     padding: 10px 0;
     overflow: hidden;
 }
@@ -364,7 +380,6 @@ h1,h2,h3,h4,h5,h6{
 .storyBoxAuthorImg{
     width:140px;
     float: left;
-    padding: 10px;
 }
 
 .storyBoxAuthorName{
@@ -383,6 +398,7 @@ h1,h2,h3,h4,h5,h6{
     float: left;
     clear: both;
     padding: 10px;
+    text-align: justify;
 }
 
 .storyBoxStory a{
@@ -403,6 +419,7 @@ h1,h2,h3,h4,h5,h6{
 
 .initiativeBox .initiativeStory{
     float: left;
+    text-align: justify;
 }
 
 
@@ -429,14 +446,14 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-.philosophyBox{
+#philosophyBox{
     background-image: url('../images/about/team.jpg');
     background-size: cover;
     color: white;
     height: 500px;
 }
 
-.philosophyBox>div{
+#philosophyBox>div{
     background: rgba(30,30,30,0.34);
     padding: 10px;
     width: 400px;
@@ -463,6 +480,7 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 20px;
     width: 150px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .teamTitleBox h2{
@@ -514,13 +532,30 @@ h1,h2,h3,h4,h5,h6{
 
 .impactBox{
     padding: 0px;
-    margin-bottom:30px;
+    margin-bottom:50px;
+    background-size: cover;
+    color: #333;  
+    overflow: hidden;  
+}
+
+.impactBox>img{
+    width: 800px;
+}
+
+.impactBox .col-md-4>img{
+    margin: auto;
+}
+
+
+.impactBoxText{
+    background: rgba(30,30,30,0.64);
+    padding: 10px;
 }
 
 
 /*2013
 ------------------------- */
-@media(min-width:768px){
+/*@media(min-width:768px){
     #carousal2013{
         width:800px;
         margin: auto;
@@ -542,6 +577,56 @@ h1,h2,h3,h4,h5,h6{
 
 #carousal2013 .carousel-control.left, #carousal2013 .carousel-control.right{
     display: block;
+}*/
+
+#carousal2013{
+    display: block;
+    clear: both;
+}
+
+#carousal2013 img{
+    width:100%;
+}
+
+#carousal2013 .carousel-caption{
+    padding-bottom: 30px;
+    background: rgba(26, 188, 156,0.7);
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-shadow:1px 1px 1px #000;
+}
+
+@media(max-width:768px){
+    #carousal2013 .carousel-caption{
+        position: static;
+        background: rgba(26, 188, 156,1);
+    }
+
+    #carousal2013 .carousel-control .glyphicon-chevron-left, 
+    #carousal2013 .carousel-control .glyphicon-chevron-right{
+        top:20%;
+    }
+}
+
+#carousal2013 .carousel-control{
+    background: none;
+}
+/*#container2013 .item{
+    width :300px;
+}
+
+#container2013 img{
+    width :300px;
+}
+*/
+.testimonialBox{
+    clear: both;
+}
+
+.testimonialBox img{
+    width:170px;
 }
 
 .sponsorshipBox img{
