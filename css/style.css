@@ -53,13 +53,22 @@
     box-shadow: 0 2px 4px 0 #99a3ad,inset 0 0 40px #eeeeee;
 }
 
+.card-shadow{
+    box-shadow:0 1px 2px #aaa;
+    background: white;
+}
+
+.oh{
+    overflow: hidden;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
     color: #363636;
-    background-color: #fff;
+    background-color: #f3f3f3;
     font-family: 'Helvetica', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -67,6 +76,7 @@ body {
 
 h1,h2,h3,h4,h5,h6{
     /*font-weight: 300;*/
+    text-shadow: 1px 1px 1px #999;
 }
 
 
@@ -366,15 +376,16 @@ h1,h2,h3,h4,h5,h6{
 /* PARTICIPANT STORIES
 ------------------------- */
 .well{
-    background: #fff;
+    background: #f3f3f3;
     border:none;
     border-top: 1px solid #333;
     border-radius: 0;
 }
 
 .storyBox{
-    padding: 10px 0;
+    padding: 10px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .storyBoxAuthorImg{
@@ -383,10 +394,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .storyBoxAuthorName{
-    display: inline-block;
+    display: inline;
     float: left;
     font-size: 16px;
-    width: 200px;
     padding: 10px;
 
 }
@@ -427,9 +437,10 @@ h1,h2,h3,h4,h5,h6{
 /* SOCIAL FEEDS
 ------------------------- */
 .socialFeedBox{
-    padding: 10px 0;
+    padding: 10px;
     overflow: hidden;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .socialFeedBox .pressCollage{
@@ -472,7 +483,7 @@ h1,h2,h3,h4,h5,h6{
 
 .teamMemberCard{
     overflow: hidden;
-    padding: 10px;
+    padding: 20px;
     min-height: 300px;
 }
 
@@ -631,6 +642,27 @@ h1,h2,h3,h4,h5,h6{
 
 .sponsorshipBox img{
     width: 300px;
+}
+
+/*2014
+------------------------- */
+.vidBox{
+    width: 800px;
+    margin: auto;
+}
+
+.story2014{
+    padding: 10px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.card2014{
+    
+}
+
+.card2014Story{
+    min-height: 300px;
 }
 
 /* JOINUS PAGE
