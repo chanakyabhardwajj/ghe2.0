@@ -677,8 +677,23 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .sponsorshipBox img{
+    /*width: 300px;*/
+    height:110px;
+    margin:10px auto;
+}
+
+.sponsorshipBox .luminous{
+    height:100px;
     width: 300px;
-    margin:auto;
+    background-image: url('../images/2013/sponsors/luminous.jpeg');
+    background-size: cover;
+}
+
+.sponsorshipBox .woodland{
+    height:100px;
+    width: 300px;
+    background-image: url('../images/2013/sponsors/woodland.jpeg');
+    background-size: cover;
 }
 
 /*2014
