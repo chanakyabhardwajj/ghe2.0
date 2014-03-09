@@ -33,7 +33,33 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Contact Details:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Email</div>
+                        <div class="panel-body">
+                            <a href="mailto:info@ghe.co.in">info@ghe.co.in</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Phone</h3>
+                        </div>
+                        <div class="panel-body">
+                            +91 991 008 9129
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="header" class="navbar-wrapper">
         <div class="navbar" role="navigation">
         <span id="logoBox">
@@ -69,7 +95,7 @@
                         </li>
                         <li class="press"><a href="./press.html">Press</a></li>
                         <li class="join"><a class="yellow" href="./join.html">Join Us</a></li>
-                        <li class="contact"><a href="#footer">Contact</a></li>
+                        <li class="contact" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -94,9 +120,10 @@
                     </div>
                 </div>
                 
+                <hr class="divider"/>
 
                 <div class="clearfix row">
-                    <div class="teamTitleBox card-shadow col-sm-12 col-md-8 col-md-offset-2 p20 mtop40 ">
+                    <div class="teamTitleBox card-shadow col-sm-12 col-md-8 col-md-offset-2 p20  justify">
                         <h2 class="center">The Team</h2>
                         <p class="p20">
                             We are a group of people from diverse backgrounds, who fell in love with the same lady – the snow clad peaks of Himalayas. The Global Himalayan Expedition is a result of our yearning to share this great experience with the rest of the world. You would find the hyperactive bunch of individuals below, debating over a cup of chai or designing something new for the web, when not working together to make this expedition possible.
@@ -104,7 +131,7 @@
                     </div>
 
                     <div class="teamMembersBox col-sm-12 col-md-12 p20 mtop40">
-                        <div class="row">
+                        <div class="row p20">
                             <div class="col-md-5 col-md-offset-1  teamMemberCard">
                                 <img class="pull-left img-responsive img-shadow" src="./images/about/paras.png">
                                 <h3 class="pull-left">Paras Loomba</h3>
@@ -117,7 +144,7 @@
                             </div>
                             
                         </div>
-                        <div class="row">
+                        <div class="row p20">
                             <div class="col-md-5 col-md-offset-1  teamMemberCard">
                                 <img class="pull-left img-responsive img-shadow" src="./images/about/gokul.png">
                                 <h3 class="pull-left">Gokul Badri</h3>
@@ -131,7 +158,7 @@
                                 <p class="pull-left justify">A technology analyst by profession, Sonal Asgotraa is an ardent explorer, on a ceaseless quest for new experiences and adventures. She was selected to participate in the 2013 International Antarctic Expedition led by Sir Robert Swan. Serving as the Young Professional Ambassador for Teach for India and a Writer for Youth Leader Magazine, Indian edition, Sonal is extremely passionate in helping to make the world around her, a better place . Her ultimate fantasy is to see the earth twirling from space, shimmering in all its beauty and she hopes to make it there someday!</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row p20">
                             <div class="col-md-5 col-md-offset-1  teamMemberCard">
                                 <img class="pull-left img-responsive img-shadow" src="./images/about/oli.png">
                                 <h3 class="pull-left">Oliver Wheeldon</h3>
@@ -148,13 +175,15 @@
                     </div>
                 </div>
 
+                <hr class="divider"/>
+
                 <div class="">
                     <div class="teamTitleBox auto justify">
                         <h2 class="center">Advisors</h2>
                     </div>
 
                     <div class="teamMembersBox">
-                        <div class="row">
+                        <div class="row p20">
                             <div class="col-md-5 col-md-offset-1  teamMemberCard">
                                 <img class="pull-left img-responsive img-shadow" src="./images/about/rob.png">
                                 <h3 class="pull-left">Robert Swan, O.B.E.</h3>

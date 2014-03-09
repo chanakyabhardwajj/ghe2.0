@@ -32,7 +32,33 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Contact Details:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Email</div>
+                        <div class="panel-body">
+                            <a href="mailto:info@ghe.co.in">info@ghe.co.in</a>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Phone</h3>
+                        </div>
+                        <div class="panel-body">
+                            +91 991 008 9129
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="header" class="navbar-wrapper">
         <div class="navbar" role="navigation">
         <span id="logoBox">
@@ -70,7 +96,7 @@
 
                         <li class="press"><a href="./press.html">Press</a></li>
                         <li class="join active"><a class="yellow" href="./join.html">Join Us</a></li>
-                        <li class="contact"><a href="#footer">Contact</a></li>
+                        <li class="contact" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -82,7 +108,7 @@
 
             <div class="col-xs-12">
                 <div id="joinusBox">
-                    <iframe src="https://docs.google.com/forms/d/16k3BLOB4DD9vfHb8ZaS2K8H5pP66j1y35C9kmiNpBk0/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    <iframe src="https://docs.google.com/forms/d/16k3BLOB4DD9vfHb8ZaS2K8H5pP66j1y35C9kmiNpBk0/viewform?embedded=true" width="760" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                 </div>
             </div>
         </div>
@@ -104,7 +130,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
