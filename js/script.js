@@ -69,14 +69,22 @@
 $(document).ready(function(){
     $(".box2014").fitVids();
 
-    /*var container = $('#masonryBox');
-   
-    $container.imagesLoaded( function(){
-      $container.masonry({
-        columnWidth:600
-        itemSelector : '.item'
-      });
-    });*/
+    var stories = $(".storyBox");
+    var storyIndex = 0;
+    
+    $("#nextStory").click(function(){
+      $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).hide();
+      storyIndex = (storyIndex + 1)%stories.length;
+      $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).show();
+    })
+
+    $("#prevStory").click(function(){
+      $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).hide();
+      storyIndex = (storyIndex - 1)%stories.length;
+      console.log(storyIndex)
+      $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).show();
+    })
+
 });
 
 window.onload = function(){

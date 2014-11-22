@@ -390,10 +390,21 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 0;
 }
 
+#prevStory{
+    float: left;
+    cursor: pointer;
+}
+
+#nextStory{
+    float: right;
+    cursor: pointer;
+}
+
 .storyBox{
     padding: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    display:none;
 }
 
 .storyBoxAuthorImg{
