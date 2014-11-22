@@ -81,7 +81,6 @@ $(document).ready(function(){
     $("#prevStory").click(function(){
       $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).hide();
       storyIndex = (storyIndex - 1)%stories.length;
-      console.log(storyIndex)
       $(stories[storyIndex<0 ? stories.length+storyIndex : storyIndex]).show();
     })
 
