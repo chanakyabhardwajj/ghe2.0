@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6{
 #header{
     background : #1abc9c;
     margin: 0;
-    height: 100px;
+    height: 60px;
 }
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .navbar ul{
-    margin-top:30px;
+    margin-top:20px;
 }
 
 .navbar .navbar-nav {
@@ -147,6 +147,8 @@ h1,h2,h3,h4,h5,h6{
 #navLogo{
     width: 80px;
     margin-top:10px;
+    position: absolute;
+    z-index: 99;
 }
 
 #homeLogo{
@@ -170,15 +172,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #header .nav>li>a {
-    padding: 10px 10px;
+    /*padding: 10px 10px;*/
+    font-size: 14px !important;
+    margin: 0 10px !important;
+    padding: 0px !important;
 }
 
 .nav>li.open>a, .nav>li>a:hover, .nav>li>a:active{
     background : transparent;
-    border-bottom: 3px solid #fff !important;
+    text-shadow : 2px 2px 2px #999;
+    transition: all 0.1s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     #header{
         height:80px;
     }
@@ -208,7 +214,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #header .nav>li>a {
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
 }
 }
 
@@ -216,6 +222,7 @@ h1,h2,h3,h4,h5,h6{
 
 #header .dropdown-menu {
     position: absolute;
+    text-align: left;
     top: 85%;
     left: 0;
     z-index: 1000;
@@ -225,9 +232,8 @@ h1,h2,h3,h4,h5,h6{
     list-style: none;
     background-color: #1abc9c;
     border: none;
-    border-bottom: 1px solid #ffffff;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: 1px 1px 1px #777;
     background-clip: padding-box;
     color: white;
     padding: 12px 5px 5px;
@@ -240,12 +246,15 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
+#header .dropdown-menu li{
+    margin-top: 10px;
+}
+
 #header .dropdown-menu li a{
     color: #ffffff;
-    font-size: 16px;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    font-weight: 700;
-    text-align: left;
+    font-size: 14px !important;
+    margin: 0 10px !important;
+    padding: 0px !important;
 }
 
 #header .dropdown-menu li a:hover, .dropdown-menu li a:active{
@@ -408,7 +417,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .storyBoxAuthorImg{
-    width:140px;
+    width:200px;
     float: left;
 }
 
@@ -582,6 +591,10 @@ h1,h2,h3,h4,h5,h6{
 .impactBoxText{
     background: rgba(30,30,30,0.64);
     padding: 10px;
+}
+
+.partnerImg{
+    max-width: 380px;
 }
 
 
@@ -894,7 +907,7 @@ h1,h2,h3,h4,h5,h6{
         border-bottom: 1px solid #ffffff;
     }
 }
-@media(min-width:768px){
+@media(min-width:1000px){
     .sidebar-offcanvas {
         display: none;
     }
