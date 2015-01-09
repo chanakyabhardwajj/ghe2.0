@@ -1,224 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-    <title>Global Himalayan Expedition</title>
-    <meta name="description" content="Global Himalayan Expedition 2013 2014"/>
-    <meta name="keywords" content="Leh, Ladakh, Himalayas, Global Himalayan Expedition, Paras Loomba, GHE, Expedition, India, Robert Swan, 2041"/>
-    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta name="author" content="Chanakya Bhardwaj">
-
-    <meta charset="UTF-8" />
-    <meta name="google" content="notranslate" />
-    <meta http-equiv="Content-Language" content="en_US" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
+    include "metaheader.html"
 </head>
-<!-- NAVBAR
-================================================== -->
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Contact Details:</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Email</div>
-                        <div class="panel-body">
-                            <a href="mailto:info@ghe.co.in">info@ghe.co.in</a>
+    include "undecidedmodal.html"
+    <div id="main">
+        include "sidebar.html"
+
+        <div class="row">
+            <div class="col-xs-12" id="notSidebar">
+                <img src="./images/logoweb.png" id="toggleSidebar">
+
+                <div class="row">
+                    <h2 class="center both sectionTitle">Third Pole Education Base</h2>
+
+                    <div class="card card-shadow col-sm-12 col-md-8 col-md-offset-2">
+                        <img class="img-shadow img-responsive" src="images/impact/ebase.jpg" alt="">
+                        <div class="cardContent">
+                            The Third Pole E-Base, setup in Ladakh, is the 3rd such E-Base in the world. Setup in a region which has experienced grave consequences of climate change, like the Cloud Burst in 2010 and receding glaciers which are cutting away water sources, the E-Base is meant to be a model of sustainability while also being a portal for the kids from the region to connect to the outside world. The E-Base is constructed completely out of renewable material, using a technique called ‘Rammed Earth’, and is powered entirely by solar panels.
+                            <br>The E-Base is located in the Mahabodhi complex in Leh, right next to the Mahabodhi School. It houses a digital library of documentaries and interactive learning tools and is capable of connecting to other institutions around the world through video conferencing. In addition to this, there are multiple tablets available, which the students can use to research about new concepts. The idea is to make learning a more engaging and enriching experience, while empowering the students of this region with tools which are now commonplace in other urban communities.
+
+                            <br><br>
+
+                            <div class="col-md-4">
+                                <img src="./images/impact/ebase1.jpg" class="img-responsive auto img-shadow">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./images/impact/ebase2.jpg" class="img-responsive auto img-shadow">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./images/impact/ebase3.jpg" class="img-responsive auto img-shadow">
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Phone</h3>
-                        </div>
-                        <div class="panel-body">
-                            +91 991 008 9129
+                <div class="row">                    
+                    <h2 class="center both sectionTitle">Himalayan Village Electrification</h2>
+                    <div class="card card-shadow col-sm-12 col-md-8 col-md-offset-2">
+                        <img class="img-shadow img-responsive center auto" src="./images/impact/grid.jpg" alt="">
+                        <div class="cardContent">
+                            Most of the villages in the Himalayas are yet to encounter their first wave of electrification. During our journey this year, we would be taking our first steps to make a difference in this regard. The GHE team would set-up a micro-grid in one of the remote villages of the region, powered exclusively by solar energy. The houses in this village would be equipped with basic lighting infrastructure, and charging provisions for small appliances.
+                            The introduction of even a limited source of electrical power can have immediate and significant economic, educational, and health benefits —by providing high-quality, non-polluting lighting; something which has been a commodity in the rest of the world for more than a decade now, but still is a luxury in these regions. Better illumination provides more opportunities for income generation; the villagers can now work during the evening/nights, and engage in activities such as traditional handicrafts, and wool weaving to supplement household income.
+                            We see this as a first step towards electrifying many more such villages and would be undertaking this project with the technical support of one of the nodal renewable energy agencies of Ladakh.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="header" class="navbar-wrapper">
-        <div class="navbar" role="navigation">
-        <span id="logoBox">
-            <a class="navbar-brand" href="./index.html"><img id="navLogo" class="" src="./images/logoweb.png"></a>
-        </span>
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">
-                        <li class="index"><a href="./index.html">Home</a></li>
-                        <li class="about"><a href="./about.html">About Us</a></li>
-                        <li class="expeditions dropdown">
-                            <a href="#" class="dropdown-toggle">Past Expeditions<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./2013.html">Ladakh 2013</a></li>
-                                <li><a href="./2014.html">Ladakh 2014</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="expeditions dropdown">
-                            <a href="#" class="dropdown-toggle">Upcoming Expeditions<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./2015.html">Ladakh 2015</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="impact dropdown">
-                            <a href="#" class="dropdown-toggle">Impact Initiatives<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./impact.html#ongoing">Ongoing</a></li>
-                                <li><a href="./impact.html#upcoming">Upcoming</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="press"><a href="./press.html">Press</a></li>
-                        <li class="join"><a class="yellow" href="./join.html">Join Us - GHE 2015</a></li>
-                        <li class="join"><a href="./partners.html">Partners</a></li>
-                        <li class="contact" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row row-offcanvas row-offcanvas-left ">
-        <div class="col-xs-3 sidebar-offcanvas" id="sidebar" role="navigation"></div>
-
-        <div class="col-xs-12">
-            <div id="ongoing">
-                <div class="impactBox row center clearfix">
-                    <h2 class="center">Third Pole Education Base</h2>
-                    <img src="images/impact/ebase.jpg" class="auto img-responsive img-shadow">
-                    <div id="impactEbase" class="row justify">
-                        <div class="col-md-offset-1 col-md-10">                        
-                            <p class=" mtop40 p20">
-                                The Third Pole E-Base, setup in Ladakh, is the 3rd such E-Base in the world. Setup in a region which has experienced grave consequences of climate change, like the Cloud Burst in 2010 and receding glaciers which are cutting away water sources, the E-Base is meant to be a model of sustainability while also being a portal for the kids from the region to connect to the outside world. The E-Base is constructed completely out of renewable material, using a technique called ‘Rammed Earth’, and is powered entirely by solar panels.
-                                <br>The E-Base is located in the Mahabodhi complex in Leh, right next to the Mahabodhi School. It houses a digital library of documentaries and interactive learning tools and is capable of connecting to other institutions around the world through video conferencing. In addition to this, there are multiple tablets available, which the students can use to research about new concepts. The idea is to make learning a more engaging and enriching experience, while empowering the students of this region with tools which are now commonplace in other urban communities.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/ebase1.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/ebase2.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/ebase3.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 
-                <hr class="divider"/>
-
-                <div class="impactBox row center clearfix">
-                    <h2 class="center">Bringing Light to Sumda Chenmo</h2>
-                    <img src="images/impact/sumda.jpg" class="auto img-responsive img-shadow">
-                    <div  id="impactSumda"  class="row justify">
-                        <div class="col-md-offset-1 col-md-10">
-                            <p class=" mtop40 p20">
-                                Sumda Chenmo is a small village nestled in the Zanskar valley, and is 2 days of trek away from the nearest inhabited town. Because of its remoteness, the village isn’t part of any electric grid, and has never had any constant source of lighting.
-                                The trek through the Hidden Valley passes through this village, where the Global Himalayan Expedition team stayed overnight, under the warm hospitality of the villagers. We had carried with us 15 solar lanterns, sponsored by Luminous India, which we handed over to the ladies of the 10 families there. When fully charged under sunlight, each lantern lasts around 10 hours, and is enough to light up the homes during the night. What shone brighter than the lanterns though, that night, were the smiles on the villagers’ faces.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/sumda1.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/sumda2.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="./images/impact/sumda3.jpg" class="img-responsive auto img-shadow">
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-
-            <hr class="divider"/>
-                
-            <div id="upcoming">
-                <div class="impactBox row center clearfix">
-                    <h2 class="center">Himalayan Village Electrification</h2>
-                    <img src="./images/impact/grid.jpg" class="auto img-responsive img-shadow">
-                    <div id="impactGrid" class="row justify">
-                        <div class="col-md-offset-1 col-md-10">
-                           <p class=" mtop40 p20">
-                                Most of the villages in the Himalayas are yet to encounter their first wave of electrification. During our journey this year, we would be taking our first steps to make a difference in this regard. The GHE team would set-up a micro-grid in one of the remote villages of the region, powered exclusively by solar energy. The houses in this village would be equipped with basic lighting infrastructure, and charging provisions for small appliances.
-                                The introduction of even a limited source of electrical power can have immediate and significant economic, educational, and health benefits —by providing high-quality, non-polluting lighting; something which has been a commodity in the rest of the world for more than a decade now, but still is a luxury in these regions. Better illumination provides more opportunities for income generation; the villagers can now work during the evening/nights, and engage in activities such as traditional handicrafts, and wool weaving to supplement household income.
-                                We see this as a first step towards electrifying many more such villages and would be undertaking this project with the technical support of one of the nodal renewable energy agencies of Ladakh.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-               <!--  <hr class="divider"/>
-
-                <div class="impactBox row center clearfix">
-                    <h2 class="center">The Clean Himalayan Journey</h2>
-                    <img src="./images/impact/chjbig.jpg" class="auto img-responsive img-shadow">
-                    <div id="impactJourney" class="row justify">
-                        <div class="col-md-offset-1 col-md-10">
-                            <p class=" mtop40 p20">
-                                This August, the team of Global Himalayan Expedition is going to embark on a clean energy journey in an Electric Powered Vehicle (EPV). The journey would stretch from Delhi to Leh, passing through the beautiful valleys of Srinagar, and the treacherous passes of Zojila and Kargil. Sir Robert Swan, the first person to have walked to both the north and south poles, will be joining us on this journey. The idea behind the journey is to demonstrate that if an electric powered vehicle could travel through the tough Himalayan terrain to reach Ladakh, then it could be used anywhere else too.
-
-                                <br>The Electric Powered Vehicle (EPV) will be driven upto the Mahabodhi campus in Leh, where it would be used as a clean intra-city passenger transport vehicle, especially for the students on the campus.
-
-                                <br>We are in the process of finalizing the sponsor partners who will help us with the technology and logistics. If you or your firm maybe interested in working with us on this initiative, please get in touch with us.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <div id="footer" class="">
-        <div id="contactBox" class="row">
-            <a class="contactIcon" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook icon-2x"></em></a>
-            <a class="contactIcon" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter icon-2x"></em></a>
-            <a class="contactIcon" href="mailto:info@ghe.co.in"><em class="icon-envelope icon-2x"></em> info@ghe.co.in</a>
-        </div>
-        <small class="pull-right copyrightLogo">© Copyright 2014, GHE</small>
-    </div>
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+include "footer.html"
+include "scripts.html"
 </body>
 </html>

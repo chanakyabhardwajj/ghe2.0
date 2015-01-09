@@ -60,21 +60,24 @@
     box-shadow: 0 2px 4px 0 #99a3ad,inset 0 0 40px #eeeeee;
 }
 
-
-
 .oh{
     overflow: hidden;
 }
 
-.card{
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+.sectionTitle{
+    background: rgba(200,200,200,0.2);
+    padding: 20px;
+    color: #666;
+    text-shadow: 0px 0px 1px #111;
 }
 
-.card500{
-    height: 500px;
-    overflow: auto;
+/* Card Styles
+-------------------------------------------------- */
+
+.card{
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
 }
 
 .card-shadow{
@@ -90,6 +93,7 @@
 .cardImage{
     margin: 0 auto 15px;
     max-width: 250px;
+    max-height: 200px;
 }
 
 .cardTitle{
@@ -104,26 +108,92 @@
 }
 
 .cardContent{
-    text-align: justify;
     margin-top: 10px;
+    text-align: justify;
 }
 
+.card300{
+    height: 300px;
+    overflow: hidden;
+}
+
+.card300 .cardContent{
+    height: 250px;
+    overflow: scroll;
+}
+
+.card500{
+    height: 500px;
+    overflow: hidden;
+}
+
+.card500 .cardContent{
+    height: 200px;
+    overflow: scroll;
+}
 
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
     color: #363636;
     background-color: #f3f3f3;
-    font-family: 'Helvetica', sans-serif !important;
+    /*font-family: 'Helvetica', sans-serif !important;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
 
 .row{
     margin: 0 !important;
+}
+
+@media screen and (min-width: 500px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 570px){
+  html{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 620px){
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 680px){
+  html{
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 720px){
+  html{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 800px){
+  html{
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 860px){
+  html{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 920px){
+  html{
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 22px;
+  }
 }
 
 /*Main Skeleton w/ Sidebar & rest of the content
@@ -173,9 +243,12 @@ body {
 #sidebar .sidebarItem {
     flex:1;
     background-color: #fafafa;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: left;
+    padding: 25px;
+}
+
+#sidebar .sidebarItem:hover {
+    border-bottom: 1px solid #aaa;
 }
 
 #sidebar .sidebarItem  a{
@@ -209,10 +282,11 @@ body {
     position: absolute;
     top:0px;
     width:100%;
-    height: 100%;
+    height: 500px;
     z-index: 1;
     display: flex;
     justify-content: center;
+    align-items:center;
     color: white;
     text-shadow: 3px 3px 3px #555;
 }
@@ -224,31 +298,16 @@ body {
 }
 
 #pageTitle h1{
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 #pageTitle h2{
-    font-size: 40px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-@media(max-width:500px){
-    #pageTitle{
-        position: static;
-        color: inherit;
-        text-shadow: none;
-    }
-
-    #pageTitleContent h1,#pageTitleContent h2{
-        font-weight: inherit;
-        font-size: 20px;
-    }
-
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
+/* HOMEPAGE CAROUSEL
 -------------------------------------------------- */
 #homeCarousal{
     min-height: 100%;
@@ -270,102 +329,29 @@ body {
     z-index: 2;
 }
 
-
-/* PARTICIPANT STORIES
-------------------------- */
-.well{
-    background: #f3f3f3;
-    border:none;
-    border-top: 1px solid #333;
-    border-radius: 0;
-}
-
-#prevStory{
+/* Stories Box Icons
+-------------------------------------------------- */
+.storyPrevIcon{
     float: left;
-    cursor: pointer;
 }
 
-#nextStory{
+.storyNextIcon{
     float: right;
-    cursor: pointer;
 }
 
-.storyBox{
-    padding: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    display:none;
-}
-
-.storyBoxAuthorImg{
-    width:200px;
-    float: left;
-}
-
-.storyBoxAuthorName{
+.storyPrevIcon, .storyNextIcon{
+    position: inherit;
     display: inline;
-    float: left;
-    font-size: 16px;
-    padding: 10px;
-
+    margin-top: 5px;
 }
 
-.storyBoxAuthorDetails{
+.storyPrevIcon:before, .storyNextIcon:before{
+    position: inherit;
+    display: inline;
+    color:black;
 }
-
-.storyBoxStory{
-    float: left;
-    clear: both;
-    padding: 10px;
-    text-align: justify;
-}
-
-.storyBoxStory a{
-    text-decoration: none;
-}
-
-/* INITIATIVES
-------------------------- */
-.initiativeBox{
-    padding: 10px;
-    overflow: hidden;
-}
-
-.initiativeBox .initiativeImg{
-    width: 140px;
-    margin:10px;
-}
-
-.initiativeBox .initiativeStory{
-    float: left;
-    text-align: justify;
-}
-
-
-
-/* SOCIAL FEEDS
-------------------------- */
-.socialFeedBox{
-    padding: 10px;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.socialFeedBox .pressCollage{
-    width: 300px;
-}
-
-
 /* ABOUT
 -------------------------------------------------- */
-.aboutBox{
-    padding: 0px;
-    margin: auto;
-}
-
-
-
 #philosophyBox{
     background-image: url('../images/about/team.jpg');
     background-size: cover;
@@ -378,34 +364,6 @@ body {
     padding: 10px;
     width: 400px;
     height: 500px;
-}
-
-
-/* TEAM PAGE
-------------------------- */
-.teamMembersBox .row{
-    margin-top: 15px;
-}
-.teamMembersBox h3{
-    font-weight: 300;
-}
-
-.teamMemberCard{
-    overflow: hidden;
-    padding: 20px;
-    min-height: 300px;
-}
-
-.teamMemberCard img{
-    margin-right: 20px;
-    width: 150px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.teamTitleBox h2{
-    text-shadow: none;
-    color: #333;
 }
 
 /* PRESS
@@ -448,222 +406,26 @@ body {
     margin-top: 20px;
 }
 
-
-/* IMPACT
+/*2013 & 2014 page image-carousals
 ------------------------- */
-
-.impactBox{
-    padding: 0px;
-    margin-bottom:50px;
-    background-size: cover;
-    color: #333;  
-    overflow: hidden;  
-}
-
-.impactBox>img{
-    width: 800px;
-}
-
-.impactBox .col-md-4>img{
-    margin: auto;
-}
-
-
-.impactBoxText{
-    background: rgba(30,30,30,0.64);
-    padding: 10px;
-}
-
-.partnerImg{
-    max-width: 380px;
-}
-
-
-/*2013
-------------------------- */
-/*@media(min-width:768px){
-    #carousal2013{
-        width:800px;
-        margin: auto;
-    }
-}
-
-
-
-#carousal2013 .carousel-caption{
-    background: rgba(30,30,30,.6);
-    padding: 10px;
-}
-
-#carousal2013 .carousel-control{
-    opacity: 1;
-    background-image: none;
-    background-color: transparent;
-}
-
-#carousal2013 .carousel-control.left, #carousal2013 .carousel-control.right{
-    display: block;
-}*/
-
-#carousal2013{
-    display: block;
-    clear: both;
-}
-
-#carousal2013 .item{
-    padding: 0 40px 10px 40px;
-}
-
-#carousal2013 img{
+.carousal img{
     width:100%;
+    margin: 0 auto 15px;
 }
 
-#carousal2013 .carousel-header{
-    position: relative;
-    top: 60px;
-    background: rgba(100,100,100,0.3);
-    padding: 10px 0;
-    color: white;
+.carousal .slick-prev{
+    left: 75px;
 }
 
-#carousal2013 .carousel-caption{
-    padding-bottom: 30px;
-    padding: 20px;
-    color: #333;
-    text-align: justify;
-    position: static;
-    text-shadow:none;
-    font-size:16px;
-}
-
-@media(max-width:768px){
-    #carousal2013 .carousel-caption{
-        font-size: 12px;
-    }
-}
-
-#carousal2013 .carousel-control .glyphicon-chevron-left, 
-#carousal2013 .carousel-control .glyphicon-chevron-right{
-    font-size: 40px;
-}
-
-@media(max-width:768px){
-    #carousal2013 .carousel-control .glyphicon-chevron-left, 
-    #carousal2013 .carousel-control .glyphicon-chevron-right{
-        top:20%;
-    }
-}
-
-#carousal2013 .carousel-control{
-    background: none;
-}
-/*#container2013 .item{
-    width :300px;
-}
-
-#container2013 img{
-    width :300px;
-}
-*/
-.testimonialBox{
-    clear: both;
-}
-
-.testimonialBox img{
-    width:170px;
-}
-
-.testimonialBox .media-body{
-    text-align: justify;
-}
-
-@media(max-width:768px){
-    .testimonialBox .media-body{
-        clear: both;
-        padding-top: 10px;
-    }
-}
-
-.sponsorshipBox img{
-    /*width: 300px;*/
-    height:110px;
-    margin:10px auto;
-}
-
-.sponsorshipBox .luminous{
-    height:100px;
-    width: 300px;
-    background-image: url('../images/2013/sponsors/luminous.jpeg');
-    background-size: cover;
-}
-
-.sponsorshipBox .woodland{
-    height:100px;
-    width: 300px;
-    background-image: url('../images/2013/sponsors/woodland.jpeg');
-    background-size: cover;
-}
-
-/*2014
-------------------------- */
-.box2014 .row{
-    clear: both;
-}
-
-.vidBox{
-    clear: both;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-
-.vidBox iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/*
-#masonryBox{
-    clear: both;
-}
-
-#masonryBox .item { width: 25%; }
-#masonryBox .item.w2 { width: 50%; }
-
-*/
-
-
-.story2014{
-    padding: 10px;
-    text-align: justify;
-    font-size: 17px;
-}
-
-.card2014{
-    
-}
-
-.card2014Story{
-    min-height: 200px;
-}
-
-.w100{
-    width:100px;
+.carousal .slick-next{
+    right: 75px;
 }
 
 /* JOINUS PAGE
 -------------------------------------------------- */
 #joinusBox{
     width:760px;
-    /*height: 1200px;*/
     margin: auto;
-}
-
-#joinusBox h4{
-    margin: 40px 0;
 }
 
 /* FOOTER CSS

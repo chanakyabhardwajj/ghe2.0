@@ -1,308 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-    <title>Global Himalayan Expedition</title>
-    <meta name="description" content="Global Himalayan Expedition 2013 2014"/>
-    <meta name="keywords" content="Leh, Ladakh, Himalayas, Global Himalayan Expedition, Paras Loomba, GHE, Expedition, India, Robert Swan, 2041"/>
-    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta name="author" content="Chanakya Bhardwaj">
-
-    <meta charset="UTF-8" />
-    <meta name="google" content="notranslate" />
-    <meta http-equiv="Content-Language" content="en_US" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-
+    include "metaheader.html"
 </head>
-<!-- NAVBAR
-================================================== -->
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Contact Details:</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Email</div>
-                        <div class="panel-body">
-                            <a href="mailto:info@ghe.co.in">info@ghe.co.in</a>
+    include "undecidedmodal.html"
+    <div id="main">
+        include "sidebar.html"
+
+        <div class="row">
+            <div class="col-xs-12" id="notSidebar">
+                <img src="./images/logoweb.png" id="toggleSidebar">
+
+                <div class="row">
+                    <h2 class="center both sectionTitle">GHE 2015</h2>
+                    <div class="card card-shadow col-sm-12 col-md-8 col-md-offset-2">
+                        <div class="auto center">
+                            <a href="./join.html"><img class="img-shadow img-responsive" src="images/2015/banner2015.jpg"></a>
                         </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Phone</h3>
+                        <div class="cardContent">
+                            Every great journey eventually comes to an end, but not before paving way for an even better one the next time.
+                            <br><br>
+                            GHE 2014 was an amazing, one of its kind, expedition. GHE 2015 promises to be even better. Spread over 11 days, packed with all kinds of action, from setting-up a micro-grid in a Himalayan village, to trekking, cycling and rafting in the mountains, to camping in some of the most picturesque locations in the world, the trip promises all of what made GHE 2014 a big success, plus more.
+                            <br><br>
+                            The itinerary would include first couple of days of acclimatization in Leh, when we would also visit the current E-Base in Leh, and help out with further improvements. Then we would be camping by Pangong Tso lake for a day, before setting off on the adventure part of the trip. This would begin with a day of cycling, followed by 4 days of trekking and one day of rafting. While out on our journey, we would also setup a micro-grid in a village, thus gifting them with year-long sustainable electricity. We would finish the trip with a visit to the Khardungla pass, after which we would attend the TEDx event happening in Leh.
+                            <br><br>
+                            For day-wise itinerary and trip essentials, please download the attached document.
                         </div>
-                        <div class="panel-body">
-                            +91 991 008 9129
+                        
+                        <div class="col-sm-12 col-md-4">
+                            <img src="./images/2015/pic1.jpg" class="cardImage img-shadow img-responsive">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="header" class="navbar-wrapper">
-        <div class="navbar" role="navigation">
-        <span id="logoBox">
-            <a class="navbar-brand" href="./index.html"><img id="navLogo" class="" src="./images/logoweb.png"></a>
-        </span>
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav">
-                        <li class="index"><a href="./index.html">Home</a></li>
-                        <li class="about"><a href="./about.html">About Us</a></li>
-                        <li class="expeditions dropdown">
-                            <a href="#" class="dropdown-toggle">Past Expeditions<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./2013.html">Ladakh 2013</a></li>
-                                <li><a href="./2014.html">Ladakh 2014</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="expeditions dropdown">
-                            <a href="#" class="dropdown-toggle">Upcoming Expeditions<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./2015.html">Ladakh 2015</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="impact dropdown">
-                            <a href="#" class="dropdown-toggle">Impact Initiatives<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="./impact.html#ongoing">Ongoing</a></li>
-                                <li><a href="./impact.html#upcoming">Upcoming</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="press"><a href="./press.html">Press</a></li>
-                        <li class="join"><a class="yellow" href="./join.html">Join Us - GHE 2015</a></li>
-                        <li class="join"><a href="./partners.html">Partners</a></li>
-                        <li class="contact" data-toggle="modal" data-target="#myUndecidedModal"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="row row-offcanvas row-offcanvas-left ">
-        <div class="col-xs-3 sidebar-offcanvas hide" id="sidebar" role="navigation"></div>
-        <div class="col-xs-12">
-            <div class="container box2014">
-                <div class="center auto">
-                    <h2 class="">GHE 2015 - In Pursuit of Paradise</h2>
-                </div>
-                <div class="row mtop40">
-                    <!-- <div class="vidBox img-shadow auto center ">
-                        <iframe src="//player.vimeo.com/video/87969933?color=1abc9c&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div> -->
-                    <div class="auto center ">
-                        <a href="./join.html"><img class="img-shadow auto center" src="images/2015/banner2015.jpg"></a>
-                    </div>
-                    <p class="col-sm-12 col-md-10 col-md-offset-1 story2014 mtop40">
-                        Every great journey eventually comes to an end, but not before paving way for an even better one the next time.
-                        <br>
-                        <br>
-                        GHE 2014 was an amazing, one of its kind, expedition. GHE 2015 promises to be even better. Spread over 11 days, packed with all kinds of action, from setting-up a micro-grid in a Himalayan village, to trekking, cycling and rafting in the mountains, to camping in some of the most picturesque locations in the world, the trip promises all of what made GHE 2014 a big success, plus more.
-                        <br>
-                        <br>
-                        The itinerary would include first couple of days of acclimatization in Leh, when we would also visit the current E-Base in Leh, and help out with further improvements. Then we would be camping by Pangong Tso lake for a day, before setting off on the adventure part of the trip. This would begin with a day of cycling, followed by 4 days of trekking and one day of rafting. While out on our journey, we would also setup a micro-grid in a village, thus gifting them with year-long sustainable electricity. We would finish the trip with a visit to the Khardungla pass, after which we would attend the TEDx event happening in Leh.
-                        <br>
-                        <br>
-                        For day-wise itinerary and trip essentials, please download the attached document.
-                    </p>
-                </div>
-
-                
-
-                <!-- <div class="row">
-                    <div id="masonryBox">
-                      <div class="item w2"><img class="img-shadow" src="images/2014/pic4.jpg"></div>
-                      <div class="item"><img class="img-shadow" src="images/2014/pic1.jpg"></div>
-                      <div class="item"><img class="img-shadow" src="images/2014/pic2.jpg"></div>
-                      <div class="item"><img class="img-shadow" src="images/2014/pic3.jpg"></div>                      
-                      <div class="item w2"><img class="img-shadow" src="images/2014/pic5.jpg"></div>
-                      
-                    </div>
-                </div>
-
-                <hr class="divider"> -->
-
-                <div class="row p20">
-                    <div class="col-md-4">
-                        <img src="./images/2015/pic1.jpg" class="img-responsive auto img-shadow">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./images/2015/pic2.jpg" class="img-responsive auto img-shadow">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="./images/2015/pic3.jpg" class="img-responsive auto img-shadow">
-                    </div>
-                </div>
-
-                <hr class="divider">
-
-                <div class="row exped mtop40">
-                    <h2 class="center auto">Expedition Details</h2>
-                    <div class="col-sm-12 col-md-6 mtop40">
-                        <div class="card-shadow p20">
-                            <h3 class="expedCardTitle center auto">Expedition Grading</h3>
-                            <div class="p20 center card2014Story">
-                                <table class="table table-condensed">
-                                    <tbody>
-                                        <tr>
-                                            <td>The Global Expedition Trek is moderate. This means you will often venture into more remote country and will cross mountain passes. Altitudes are relatively low, reaching no higher than 4,900m/16,300ft. The trek is suitable for anyone who loves hill walking and leads a healthy, active lifestyle. As a minimum we recommend you start training four to six weeks prior to the trip, walking for at least 3km, three times a week.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="col-sm-12 col-md-4">
+                            <img src="./images/2015/pic2.jpg" class="cardImage img-shadow img-responsive">
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mtop40">
-                        <div class="card-shadow p20">
-                            <h3 class="expedCardTitle center auto">Total Distance To Be Covered : 590kms</h3>
-
-                            <div class="p20 center card2014Story">
-                                <table class="table table-condensed table-hover">
-                                    <tbody>
-                                        <tr>
-                                            <td>Trek Distance: - 30Kms</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Raft Distance: - 30Kms</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cycling Distance: - 30Kms</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Travel distance by private vehicle:- 500Kms</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="col-sm-12 col-md-4">
+                            <img src="./images/2015/pic3.jpg" class="cardImage img-shadow img-responsive">
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 card2014 ">
-                        <div class="card-shadow mtop40 p20">
-                            <h3 class="expedCardTitle center auto">Climate and Temperature</h3>
-
-                            <div class="expedCardText justify card2014Story mtop40">
-                                Average day time temperature on the trek is 20 deg C and night time temperatures could drop to 10 deg C. However you should be ready for inclement weather in any case as weather has become highly unpredictable and can change quickly at altitudes. As comically seen, it is said that in Ladakh one can get sun stroke and frost bite at the same time! This tells us a lot about the type of weather that you must expect.
-                            </div>
+                    <h2 class="center both sectionTitle">Expedition Details</h2>
+                    <div class="card card-shadow card300 col-sm-12 col-md-4 col-md-offset-2">                        
+                        <div class="cardHeading">Expedition Grading</div>
+                        <div class="cardContent">
+                            <table class="table table-condensed">
+                                <tbody>
+                                    <tr>
+                                        <td>The Global Expedition Trek is moderate. This means you will often venture into more remote country and will cross mountain passes. Altitudes are relatively low, reaching no higher than 4,900m/16,300ft. The trek is suitable for anyone who loves hill walking and leads a healthy, active lifestyle. As a minimum we recommend you start training four to six weeks prior to the trip, walking for at least 3km, three times a week.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-md-4 card2014">
-                        <div class="card-shadow mtop40 p20">
-                            <h3 class="expedCardTitle center auto">Passport, VISA &amp; Vaccinations</h3>
-
-                            <div class="expedCardText justify card2014Story mtop40">
-                                It is necessary that all travelers to India obtain a tourist visa before departure. visa is required for EU passport holders. Holders of non-EU passports are advised to check whether they require a visa. There are no compulsory vaccinations although it is strongly recommended that you are vaccinated against: Typhoid; Hepatitis A and B. Tetanus and polio vaccinations should also be up to date at the time of travel. You should contact your doctor prior to travel to obtain these vaccinations.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 card2014">
-                        <div class="card-shadow mtop40 p20">
-                            <h3 class="expedCardTitle center auto">Medical Aid</h3>
-
-                            <div class="expedCardText justify card2014Story mtop40">
-                                The Expedition takes us through remote regions where professional medical help may not be available. We carry with us a comprehensive medical first-aid kit advised by doctor. Besides our Tour Leaders, who are not much qualified medically, we will have a separate paramedic who is competent enough to give first-aid if and when required. Carry any and all personal medication that you may need, and its an absolute must to let us know well in advance should you be suffering from any particular ailment.
-                            </div>
+                    <div class="card card-shadow card300 col-sm-12 col-md-4">                        
+                        <div class="cardHeading">Total Distance To Be Covered : 590kms</div>
+                        <div class="cardContent">
+                            <table class="table table-condensed table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>Trek Distance: - 30Kms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Raft Distance: - 30Kms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cycling Distance: - 30Kms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Travel distance by private vehicle:- 500Kms</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
 
-                <hr class="divider">
+                <div class="row">
+                    <div class="card card-shadow card300 col-sm-12 col-md-4">
+                        <div class="cardHeading">Climate and Temperature</div>
+                        <div class="cardContent">
+                            Average day time temperature on the trek is 20 deg C and night time temperatures could drop to 10 deg C. However you should be ready for inclement weather in any case as weather has become highly unpredictable and can change quickly at altitudes. As comically seen, it is said that in Ladakh one can get sun stroke and frost bite at the same time! This tells us a lot about the type of weather that you must expect.
+                        </div>
+                    </div>
+
+                    <div class="card card-shadow card300 col-sm-12 col-md-4">
+                        <div class="cardHeading">Passport, VISA &amp; Vaccinations</div>
+                        <div class="cardContent">
+                            It is necessary that all travelers to India obtain a tourist visa before departure. visa is required for EU passport holders. Holders of non-EU passports are advised to check whether they require a visa. There are no compulsory vaccinations although it is strongly recommended that you are vaccinated against: Typhoid; Hepatitis A and B. Tetanus and polio vaccinations should also be up to date at the time of travel. You should contact your doctor prior to travel to obtain these vaccinations.
+                        </div>
+                    </div>
+                    <div class="card card-shadow card300 col-sm-12 col-md-4">
+                        <div class="cardHeading">Medical Aid</div>
+                        <div class="cardContent">
+                            The Expedition takes us through remote regions where professional medical help may not be available. We carry with us a comprehensive medical first-aid kit advised by doctor. Besides our Tour Leaders, who are not much qualified medically, we will have a separate paramedic who is competent enough to give first-aid if and when required. Carry any and all personal medication that you may need, and its an absolute must to let us know well in advance should you be suffering from any particular ailment.
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="row p20 center">
-                    <h2 class="center auto">Downloads</h2>
-                    <div class="col-sm-12 col-md-offset-2 col-md-8 mtop40 card-shadow p20">
-                        
+                <div class="row">
+                    <h2 class="center both sectionTitle">Downloads</h2>
+                    <div class="card card-shadow col-sm-12 col-md-offset-2 col-md-8">                        
                         <a href="https://www.dropbox.com/s/qqj681m3vykliz8/Expedition%20Essentials%20%282%29.pdf" target="_blank"><h3>Expedition Essentials</h3></a>
 
                         <a href="https://www.dropbox.com/s/g111nbbifsjyuvg/A%20Brief%20introduction%20to%20Ladakh.pdf" target="_blank"><h3>A Brief introduction to Ladakh</h3></a>
                     </div>
                 </div>
-
-                <!-- <hr class="divider">
-                
-                <div class="row p20 center">
-                    <h2 class="center auto">Media Partner</h2>
-                    <div class="col-sm-12 col-md-offset-2 col-md-8 mtop40 card-shadow p20">
-                        
-                        <a href="http://articles.economictimes.indiatimes.com/2014-05-29/news/50182100_1_himalayan-expedition-international-antarctic-expedition-new-expedition" target="_blank">
-                            <img src="images/2015/etlogo.jpg" class="w100"/>
-                        </a>
-                    </div>
-                </div>
-
-                <hr class="divider">
-                
-                <div class="row p20 center">
-                    <h2 class="center auto">Travel Partner</h2>
-                    <div class="col-sm-12 col-md-offset-2 col-md-8 mtop40 card-shadow p20">
-                        
-                        <a href="http://shoesonloose.com/" target="_blank">
-                            <img src="images/2015/shoesonloose.png" class="w100"/>
-                        </a>
-                    </div>
-                </div> -->
-
-                
-
             </div>
         </div>
     </div>
-
-    <!-- FOOTER -->
-    <div id="footer" class="">
-        <div id="contactBox" class="row">
-            <a class="contactIcon" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook icon-2x"></em></a>
-            <a class="contactIcon" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter icon-2x"></em></a>
-            <a class="contactIcon" href="mailto:info@ghe.co.in"><em class="icon-envelope icon-2x"></em> info@ghe.co.in</a>
-        </div>
-        <small class="pull-right copyrightLogo">© Copyright 2014, GHE</small>
-    </div>
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+include "footer.html"
+include "scripts.html"
 </body>
 </html>

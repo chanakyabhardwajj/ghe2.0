@@ -1,213 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-
-    <title>Global Himalayan Expedition</title>
-    <meta name="description" content="Global Himalayan Expedition 2013 2014"/>
-    <meta name="keywords" content="Leh, Ladakh, Himalayas, Global Himalayan Expedition, Paras Loomba, GHE, Expedition, India, Robert Swan, 2041"/>
-    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta name="author" content="Chanakya Bhardwaj">
-
-    <meta charset="UTF-8" />
-    <meta name="google" content="notranslate" />
-    <meta http-equiv="Content-Language" content="en_US" />
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <link href="css/style.css" rel="stylesheet">
+    include "metaheader.html"
 </head>
 <body>
-    <div class="modal fade" id="myUndecidedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Contact Details:</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Email</div>
-                        <div class="panel-body">
-                            <a href="mailto:info@ghe.co.in">info@ghe.co.in</a>
+    include "undecidedmodal.html"
+    <div id="main">
+        include "sidebar.html"
+
+        <div class="row">
+            <div class="col-xs-12" id="notSidebar">
+                <img src="./images/logoweb.png" id="toggleSidebar">
+
+                <div class="mainBlock">
+                    <div id="pageTitle">
+                        <div id="pageTitleContent">
+                            <!-- <img id="homeLogo" class="" src="./images/logoweb.png"> -->
+                            <h1>Global Himalayan Expedition</h1>
+                            <h2>9th - 21st August 2015</h2>
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Phone</h3>
+                    <div id="homeCarousal">
+                        <div class="item">
+                            <img src="./images/home/gallery/slide1.jpg" class="img-responsive">
                         </div>
-                        <div class="panel-body">
-                            +91 991 008 9129
+                        <div class="item">
+                            <img src="./images/home/gallery/slide2.jpg" class="img-responsive">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="main">
-    <div class="row">
-        <div class="col-xs-8 col-md-3 closed" id="sidebar" role="navigation"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12" id="notSidebar">
-            <img src="./images/logoweb.png" id="toggleSidebar">
-
-            <div id="pageTitle">
-                <div id="pageTitleContent">
-                    <img id="homeLogo" class="" src="./images/logoweb.png">
-                    <h1>Global Himalayan Expedition</h1>
-                    <h2>9th - 21st August 2015</h2>
-                </div>
-            </div>
-
-            <div id="homeCarousal">
-                <div class="item active">
-                    <img src="images/home/gallery/slide1.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide2.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide3.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide4.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide5.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide6.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide7.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide8.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide9.jpg" class="img-responsive">
-                </div>
-                <div class="item">
-                    <img src="images/home/gallery/slide10.jpg" class="img-responsive">
-                </div>
-            </div>
-
-            <div class="row p20">
-                <div id="storiesBox" class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/shama.jpg">
-                        <div class="cardTitle">Shama Amalean</div>
-                        <div class="cardSubTitle">IAE 2014 Alumni & Retail Merchandising Manager, New York</div>
-                        <div class="cardContent">
-                            Joining hands in an unknown land to bring electricity to the beautiful people of Sumdha Chenmo was an extraordinary experience; one which not only cultivated strong friendships but also showcased the power of the human spirit when we come together to achieve greater good.
+                        <div class="item">
+                            <img src="./images/home/gallery/slide3.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide4.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide5.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide6.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide7.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide8.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide9.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="./images/home/gallery/slide10.jpg" class="img-responsive">
                         </div>
                     </div>
+                </div>
 
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/rikke.jpg">
-                        <div class="cardTitle">Rikke Maria Eriksen</div>
-                        <div class="cardSubTitle">Psychologist, Abu Dhabi, UAE</div>
-                        <div class="cardContent">
-                            “To live is to travel” the famous writer and Dane H.C. Andersen said, and I couldn’t agree more with him. It describes perfectly the feeling I had during and after this unique and extraordinaire experience. It was challenging, fun, rewarding, amazing. Up there in the mountains you feel totally free and alive, a vivid and life enhancing experience without a doubt. It was tough, it was magical, it was a real adventure. The people we met on our way live a simple, uncomplicated life often battling with the elements and harsh landscape they are surrounded by and still they surrounded us with a warmth and a welcome that amazed. The times I shared with my fellow adventurers can never be taken away or forgotten.
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/esther.jpg">
-                        <div class="cardTitle">Esther Wong</div>
-                        <div class="cardSubTitle">IAE 2013 Alumni, HongKong</div>
-                        <div class="cardContent">
-                            Very seldom are we given the opportunity to make a measurable impact in the world. To be part of a team that helped to set up solar grids in the village of Sumda Chenmo, and seeing the pure joy on the villagers' faces when we turned on the lights for the first time, is something I will never forget.
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/rolf.jpg">
-                        <div class="cardTitle">Rolf F. Palgaard</div>
-                        <div class="cardSubTitle">Chief Operating Officer – Capana Group</div>
-                        <div class="cardContent">
-                            GHE was for me an opportunity to bring back focus, dedication and a broader perspective to my life – it was extremely enriching and inspirational to see-, live with- and change the lives of the people in Sumda Chenmo. I can urge anyone who feels they want to do more with their life, to take the leap and join the cause of “improving sustainability worldwide” and GHE is the perfect place to start this journey.
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/archi.jpg">
-                        <div class="cardTitle">Archi Verma</div>
-                        <div class="cardSubTitle">Consultant, Qualitative Research, TNS Dubai</div>
-                        <div class="cardContent">
-                            The journey you undertake with GHE, is a journey unlike any other.  As you are thrown against the bare and stark backdrop of the Himalayas, you learn to overcome your fears, challenge your limits and appreciate the beauty around you. In between conquering peaks and battling cold and sun, you befriend kindred spirits, and unite with those who were once strangers, to bring ‘light’ to a shared dream (Sumda Chenmo)!
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/ritu.jpg">
-                        <div class="cardTitle">Ritu Menon</div>
-                        <div class="cardSubTitle">Marketing Professional, Mumbai</div>
-                        <div class="cardContent">
-                            An experience of a lifetime that brought so much peace and happiness ...it was the mountains, the experience of connecting and learning from people from diverse cultures, varied age groups ....and above all, the feeling of having been able to contribute to make a difference to the lives of the people of Sumdo Chenmo. It was an honour to be part of the great and memorable moment on the evening of August 18,2014 when Sumdo Chenmo saw light for the first time ...You needed to be there!
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/stephanie.jpeg">
-                        <div class="cardTitle">Stephanie Wolcott</div>
-                        <div class="cardSubTitle">Associate Director, Kellogg Innovation Network</div>
-                        <div class="cardContent">
-                            ..every step was worth it to experience such pristine, overwhelming beauty. Added to that, we had the pleasure to gift solar lanterns to each of the villagers at Sumda Chenmo, a village of six houses and a two-day walk from anywhere..
+                <div class="row p20">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <div class="card card-shadow card500">
+                            <div class="cardHeading">
+                                <button class="slick-prev storyPrevIcon"></button>
+                                    Stories
+                                <button class="slick-next storyNextIcon"></button>
+                            </div>
+                            <div id="storiesBox">
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/shama.jpg">
+                                    <div class="cardTitle">Shama Amalean</div>
+                                    <div class="cardSubTitle">IAE 2014 Alumni & Retail Merchandising Manager, New York</div>
+                                    <div class="cardContent">
+                                        Joining hands in an unknown land to bring electricity to the beautiful people of Sumdha Chenmo was an extraordinary experience; one which not only cultivated strong friendships but also showcased the power of the human spirit when we come together to achieve greater good.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/rikke.jpg">
+                                    <div class="cardTitle">Rikke Maria Eriksen</div>
+                                    <div class="cardSubTitle">Psychologist, Abu Dhabi, UAE</div>
+                                    <div class="cardContent">
+                                        “To live is to travel” the famous writer and Dane H.C. Andersen said, and I couldn’t agree more with him. It describes perfectly the feeling I had during and after this unique and extraordinaire experience. It was challenging, fun, rewarding, amazing. Up there in the mountains you feel totally free and alive, a vivid and life enhancing experience without a doubt. It was tough, it was magical, it was a real adventure. The people we met on our way live a simple, uncomplicated life often battling with the elements and harsh landscape they are surrounded by and still they surrounded us with a warmth and a welcome that amazed. The times I shared with my fellow adventurers can never be taken away or forgotten.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/esther.jpg">
+                                    <div class="cardTitle">Esther Wong</div>
+                                    <div class="cardSubTitle">IAE 2013 Alumni, HongKong</div>
+                                    <div class="cardContent">
+                                        Very seldom are we given the opportunity to make a measurable impact in the world. To be part of a team that helped to set up solar grids in the village of Sumda Chenmo, and seeing the pure joy on the villagers' faces when we turned on the lights for the first time, is something I will never forget.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/rolf.jpg">
+                                    <div class="cardTitle">Rolf F. Palgaard</div>
+                                    <div class="cardSubTitle">Chief Operating Officer – Capana Group</div>
+                                    <div class="cardContent">
+                                        GHE was for me an opportunity to bring back focus, dedication and a broader perspective to my life – it was extremely enriching and inspirational to see-, live with- and change the lives of the people in Sumda Chenmo. I can urge anyone who feels they want to do more with their life, to take the leap and join the cause of “improving sustainability worldwide” and GHE is the perfect place to start this journey.
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/archi.jpg">
+                                    <div class="cardTitle">Archi Verma</div>
+                                    <div class="cardSubTitle">Consultant, Qualitative Research, TNS Dubai</div>
+                                    <div class="cardContent">
+                                        The journey you undertake with GHE, is a journey unlike any other.  As you are thrown against the bare and stark backdrop of the Himalayas, you learn to overcome your fears, challenge your limits and appreciate the beauty around you. In between conquering peaks and battling cold and sun, you befriend kindred spirits, and unite with those who were once strangers, to bring ‘light’ to a shared dream (Sumda Chenmo)!
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/ritu.jpg">
+                                    <div class="cardTitle">Ritu Menon</div>
+                                    <div class="cardSubTitle">Marketing Professional, Mumbai</div>
+                                    <div class="cardContent">
+                                        An experience of a lifetime that brought so much peace and happiness ...it was the mountains, the experience of connecting and learning from people from diverse cultures, varied age groups ....and above all, the feeling of having been able to contribute to make a difference to the lives of the people of Sumdo Chenmo. It was an honour to be part of the great and memorable moment on the evening of August 18,2014 when Sumdo Chenmo saw light for the first time ...You needed to be there!
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="cardImage img-shadow img-responsive" src="./images/home/participants/stephanie.jpeg">
+                                    <div class="cardTitle">Stephanie Wolcott</div>
+                                    <div class="cardSubTitle">Associate Director, Kellogg Innovation Network</div>
+                                    <div class="cardContent">
+                                        ..every step was worth it to experience such pristine, overwhelming beauty. Added to that, we had the pleasure to gift solar lanterns to each of the villagers at Sumda Chenmo, a village of six houses and a two-day walk from anywhere..
+                                    </div>
+                                </div>
+                                <div>
+                                   <img class="cardImage img-shadow img-responsive" src="./images/home/participants/joost.jpg">
+                                   <div class="cardTitle">Joost Notenboom</div>
+                                   <div class="cardSubTitle">Senior Associate KPMG Climate Change & Sustainability Services | Co-Founder Cycle for Water</div>
+                                   <div class="cardContent">
+                                    What impressed even more than the breathtaking backdrop of the Himalaya, the kindness and openness of its people, and the skill and energy of the GHE team – was the coming together of kindred spirits from across the world to connect, bond, and leave behind a positive legacy of their presence at Mahabodhi. Teamwork is what makes the dream work!
+                                </div>
+                            </div>
+                            <div>
+                                <img class="cardImage img-shadow img-responsive" src="./images/home/participants/michiel.jpg">
+                                <div class="cardTitle">Michiel Roodenburg</div>
+                                <div class="cardSubTitle">Senior Associate KPMG Infrastructure Advisory | Co-Founder Cycle for Water</div>
+                                <div class="cardContent">
+                                    What I personally really like about GHE, is the fact it combines physical exercise with mental challenges, which are then wrapped in a lot of fun. As an Infrastructure professional, I am always looking to build bridges. It felt so fulfilling when we, as a team, were able to put something tangible on the ground; The E-Base. Yes, you will sweat. Yes, you will be in pain. Yes, you will smile!
+                                </div>
+                            </div>
+                            <div>
+                                <img class="cardImage img-shadow img-responsive" src="./images/home/participants/laura.jpg">
+                                <div class="cardTitle">Laura Burling</div>
+                                <div class="cardSubTitle">Search Director, MediaCom New York</div>
+                                <div class="cardContent">
+                                    Those 5 days trekking and camping are some of the best days of my life.  It really gave me some time to step away from every day life and think about focusing on what's important, what I want out of life and how I can make more of a difference in the lives of others
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/joost.jpg">
-                        <div class="cardTitle">Joost Notenboom</div>
-                        <div class="cardSubTitle">Senior Associate KPMG Climate Change & Sustainability Services | Co-Founder Cycle for Water</div>
-                        <div class="cardContent">
-                            What impressed even more than the breathtaking backdrop of the Himalaya, the kindness and openness of its people, and the skill and energy of the GHE team – was the coming together of kindred spirits from across the world to connect, bond, and leave behind a positive legacy of their presence at Mahabodhi. Teamwork is what makes the dream work!
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/michiel.jpg">
-                        <div class="cardTitle">Michiel Roodenburg</div>
-                        <div class="cardSubTitle">Senior Associate KPMG Infrastructure Advisory | Co-Founder Cycle for Water</div>
-                        <div class="cardContent">
-                            What I personally really like about GHE, is the fact it combines physical exercise with mental challenges, which are then wrapped in a lot of fun. As an Infrastructure professional, I am always looking to build bridges. It felt so fulfilling when we, as a team, were able to put something tangible on the ground; The E-Base. Yes, you will sweat. Yes, you will be in pain. Yes, you will smile!
-                        </div>
-                    </div>
-
-                    <div class="card card-shadow card500">
-                        <div class="cardHeading">Stories</div>
-                        <img class="cardImage img-shadow img-responsive" src="images/home/participants/laura.jpg">
-                        <div class="cardTitle">Laura Burling</div>
-                        <div class="cardSubTitle">Search Director, MediaCom New York</div>
-                        <div class="cardContent">
-                            Those 5 days trekking and camping are some of the best days of my life.  It really gave me some time to step away from every day life and think about focusing on what's important, what I want out of life and how I can make more of a difference in the lives of others
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-4">
@@ -236,22 +175,22 @@
             </div>
 
             <div class="row p20">
-                <div id="socialFeedsBox" class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="card card-shadow">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card card-shadow card300">
                         <div class="cardHeading">In the news</div>
-                        <a href="./press.html"><img class="cardImage img-shadow img-responsive" src="images/home/press.png"></a>
+                        <a href="./press.html"><img class="cardImage img-shadow img-responsive" src="./images/home/press.png"></a>
                     </div>
                 </div>
-                <div id="socialFeedsBox" class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="card card-shadow">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card card-shadow card300">
                         <div class="cardHeading">Keep in touch</div>
                         <div class="cardContent">
                             <div class="fb-like-box" data-href="https://www.facebook.com/GlobalHimalayanExpedition" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
                         </div>
                     </div>
                 </div>
-                <div id="socialFeedsBox" class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="card card-shadow">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="card card-shadow card300">
                         <div class="cardHeading">Tweets</div>
                         <div class="cardContent">
                             <a class="twitter-timeline" href="https://twitter.com/GHE_Connect" data-widget-id="436503063168184321">Follow us..</a>
@@ -259,37 +198,10 @@
                     </div>
                 </div>
             </div>
-            
-            <div id="footer" class="col-xs-12">
-                <div id="contactBox" class="row">
-                    <a class="contactIcon" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook icon-2x"></em></a>
-                    <a class="contactIcon" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter icon-2x"></em></a>
-                    <a class="contactIcon" href="mailto:info@ghe.co.in"><em class="icon-envelope icon-2x"></em> info@ghe.co.in</a>
-                </div>
-                <small class="pull-right copyrightLogo">© Copyright 2014, GHE</small>
-            </div>
         </div>
-
-
-
-
     </div>
-
-
+    include "footer.html"
 </div>
-
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="js/script.js"></script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=618393514854846";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+include "scripts.html"
 </body>
 </html>

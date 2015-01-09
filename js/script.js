@@ -9,8 +9,33 @@ $(document).ready(function(){
 
   $('#storiesBox').slick({
     adaptiveHeight : true,
-    arrows : true
+    autoplay : false,
+    arrows: false
   });
+
+  $('.storyPrevIcon').click(function(){
+    $('#storiesBox').slickPrev();  
+  });
+
+  $('.storyNextIcon').click(function(){
+    $('#storiesBox').slickNext();  
+  });
+
+  $("#carousal2013").slick({
+    adaptiveHeight : false,
+    autoplay : true,
+    arrows : true,
+    infinite : true,
+  });
+
+  $("#carousal2014").slick({
+    adaptiveHeight : false,
+    autoplay : true,
+    arrows : true,
+    infinite : true,
+  });
+
+  
 
   $("#notSidebar").click(function(e){
     $('#main').removeClass("sidebar-visible");
@@ -21,7 +46,3 @@ $(document).ready(function(){
     e.stopPropagation();
   });
 });
-
-window.onload = function(){
-    $('#sidebar').load('partials/sidebar.html');
-};
