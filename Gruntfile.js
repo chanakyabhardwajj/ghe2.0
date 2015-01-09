@@ -2,7 +2,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      build: ["build"]
+      dev: ["build/*", "!build/images"],
+      prod: ["build"]
     },
     copy: {
       main: {
@@ -24,7 +25,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: '*.html',
+        files: ['*.html', 'css/*', 'js/*', 'partials/*'],
         tasks: ['default'],
         options: {
           interrupt: true,
@@ -52,6 +53,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  // Default task(s).
-  grunt.registerTask('default', ['clean', 'imagemin', 'copy', 'includes', 'watch']);
+  // Default task(s) : use this for development work.
+  grunt.registerTask('default', ['clean:dev', 'copy', 'includes', 'watch']);
+
+
+  // Prod task(s) : use this before uploading to prod.
+  // Minifies images.
+  grunt.registerTask('prod', ['clean:prod', 'imagemin', 'copy', 'includes']);
 };
