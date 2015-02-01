@@ -59,8 +59,12 @@ body{
     height:300px;
 }
 
+.ui.card.social{
+    text-align: center;
+}
+
 .ui.card.normal{
-    margin: 1em auto;
+    margin: 0 auto;
     box-shadow: none;
     height:450px;
 }
@@ -126,7 +130,7 @@ body{
 
 .ui.items>.item>.image+.content {
     background: white;
-    padding-top: 1.5em;
+    padding: 1.5em;
 }
 
 /*Big Navbar*/
@@ -196,6 +200,10 @@ body{
     color:black;
 }
 
+.social-wrapper *{
+    width : 100% !important;
+}
+
 /*Carousals Full Page
 ------------------------- */
 .carousal{
@@ -249,5 +257,6 @@ body{
 -------------------------------------------------- */
 #joinusBox{
     width:760px;
+    height:auto;
     margin: auto;
 }
