@@ -1,283 +1,139 @@
-/*Common Classes*/
-.white{
-    color:#f8f8f8;
+/*Semantic UI Patching*/
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.black{
-    color: #363636;
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 60px;
 }
 
-.yellow{
-    color: #ffdc00 !important;
+.ui.grid.main{
+    margin-top: 70px;
 }
 
-.center{
-    text-align: center;
+
+.mobile.row{
+    padding-top: 0px !important;
+    margin-top: 0px !important;
 }
 
-.justify{
-    text-align: justify;
+.mobile.row .ui.inverted.menu{
+    border-radius: 0px !important;
 }
 
-.auto{
+.padding-reset{
+    padding: 0px !important;
+}
+
+.ui.message{
+    padding: 40px !important;
+}
+
+@media (max-width: 767px) {
+    .ui.grid.main{
+        margin-top: 70px;
+    }
+    .ui.vertical.menu.navbar{
+        margin-top: 35px !important;
+    }
+
+    .ui.page {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.ui.vertical.menu{
+    margin-top: -15px !important;
+    width: 100%;
+    display: none;
+}
+
+.ui.card{
+    margin: 1em auto;
+    box-shadow: none;
+    height:300px;
+}
+
+.ui.card.normal{
+    margin: 1em auto;
+    box-shadow: none;
+    height:450px;
+}
+
+.ui.card.normal .image img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.ui.card.normal .description {
+    max-height: 150px;
+}
+
+.ui.card.big{
+    margin: 1em auto;
+    box-shadow: none;
+    height: 500px;
+    width: 400px;
+}
+
+.ui.card.big .image img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.ui.card.big .description {
+    height: 250px;
+}
+
+.ui.card.very.big{
+    margin: 1em auto;
+    box-shadow: none;
+    min-height: none;
+    max-height: none;
+    height: auto;
+    width: 700px;
+}
+
+.ui.card.very.big .image img {
+    height: 350px;
+    object-fit: contain;
+}
+
+.ui.card.very.big .description {
+    min-height: none;
+    max-height: none;
+    height: auto;
+}
+
+.ui.items>.item {
+    background: white;
+}
+
+.ui.items .item .image{
+    padding: 1.5em;
+}
+
+.ui.items .item .image img {
+    height: 150px;
+    object-fit: cover;
     margin: auto;
 }
 
-.bgWhite{
-    background : #fff;
-}
-
-.p20{
-    padding: 20px;
-}
-
-.mtop40{
-    margin-top: 40px;
-}
-
-.both{
-    clear: both;
-}
-
-.full-width{
-    width: 100%;
-}
-
-.img-shadow{
-    border: 0.5rem solid #eee;
-    box-shadow: 0 2px 4px 0 #99a3ad,inset 0 0 40px #eeeeee;
-}
-
-.oh{
-    overflow: hidden;
-}
-
-.sectionTitle{
-    background: rgba(200,200,200,0.2);
-    padding: 20px;
-    color: #666;
-    text-shadow: 0px 0px 1px #111;
-}
-
-/* Card Styles
--------------------------------------------------- */
-
-.card{
-    text-align: center;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-
-.card-shadow{
-    box-shadow:0 1px 2px #aaa;
+.ui.items>.item>.image+.content {
     background: white;
+    padding-top: 1.5em;
 }
 
-.cardHeading{
-    font-size: 22px;
-    margin-bottom: 10px;
+/*Big Navbar*/
+#bigNavbar{
+    padding-left: 2%;
+    padding-right: 2%;
 }
-
-.cardImage{
-    margin: 0 auto 15px;
-    max-width: 250px;
-    max-height: 200px;
-}
-
-.cardTitle{
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.cardSubTitle{
-    font-weight: normal;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.cardContent{
-    margin-top: 10px;
-    text-align: justify;
-}
-
-.card300{
-    height: 300px;
-    overflow: hidden;
-}
-
-.card300 .cardContent{
-    height: 250px;
-    overflow: scroll;
-}
-
-.card500{
-    height: 500px;
-    overflow: hidden;
-}
-
-.card500 .cardContent{
-    height: 150px;
-    overflow: scroll;
-}
-
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-
-body {
-    color: #363636;
-    background-color: #f3f3f3;
-    /*font-family: 'Helvetica', sans-serif !important;*/
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-}
-
-.row{
-    margin: 0 !important;
-}
-
-@media screen and (min-width: 500px){
-  html{
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 570px){
-  html{
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 620px){
-  html{
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 680px){
-  html{
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 720px){
-  html{
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 800px){
-  html{
-    font-size: 19px;
-  }
-}
-@media screen and (min-width: 860px){
-  html{
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 920px){
-  html{
-    font-size: 21px;
-  }
-}
-@media screen and (min-width: 1000px){
-  html{
-    font-size: 22px;
-  }
-}
-
-/*Main Skeleton w/ Sidebar & rest of the content
--------------------------------------------------- */
-#main #sidebar, #main #notSidebar{
-    transition: all 0.4s ease;
-    transform: translate3d(0,0,1px);
-}
-
-#main #sidebar{
-    left: -280px;
-    position: fixed;
-}
-
-#main.sidebar-visible #sidebar{
-    left: 0px;
-}
-
-#main #notSidebar{
-    left:0px;
-}
-
-#main.sidebar-visible #notSidebar{
-    left: 280px;
-}
-
-
-/*Sidebar
--------------------------------------------------- */
-#sidebar{
-    width: 280px;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
-    background: white;
-    color: inherit;
-    padding: 0px;
-    margin: 0px;
-
-
-    display: flex;
-    flex-flow: column;
-    box-shadow: 1px 5px 9px #ccc;
-    
-}
-
-#sidebar .sidebarItem {
-    flex: 1;
-    background-color: #fafafa;
-    padding: 0 25px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-#sidebar .sidebarItem:hover {
-    background: #eee;
-}
-
-#sidebar a.sidebarItem{
-    text-decoration: none;
-    color: #363636;
-}
-
-#sidebar .sidebarHighlight{
-    background: #ddd;
-}
-
-#sidebar a.sidebarHighlight{
-    color: #1abc9c;
-}
-
-#sidebar .sidebarHighlight:hover {
-    background: #ddd;
-}
-
-
-/*notSidebar
--------------------------------------------------- */
-#notSidebar{
-    padding: 0px;
-    margin: 0px;
-}
-
-#notSidebar #toggleSidebar{
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    z-index: 100;
-    width: 40px;
-    box-shadow: 1px 1px 1px #eee;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
 
 /*Page Title Box
 -------------------------------------------------- */
@@ -291,6 +147,14 @@ body {
     align-items:flex-start;
     color: white;
     text-shadow: 3px 3px 3px #555;
+}
+
+@media screen and (max-width: 768px){
+    #pageTitle{
+        position: static;
+        color: inherit;
+        text-shadow: none;
+    }
 }
 
 #pageTitleContent{
@@ -309,27 +173,6 @@ body {
     font-weight: 700;
 }
 
-/* HOMEPAGE CAROUSEL
--------------------------------------------------- */
-#homeCarousal{
-    min-height: 100%;
-    clear: both;
-    display: block;
-}
-
-#homeCarousal .item img{
-    width:100%;
-}
-
-#homeCarousal .slick-prev{
-    left: 20px;
-    z-index: 2;
-}
-
-#homeCarousal .slick-next{
-    right: 20px;
-    z-index: 2;
-}
 
 /* Stories Box Icons
 -------------------------------------------------- */
@@ -352,113 +195,59 @@ body {
     display: inline;
     color:black;
 }
-/* ABOUT
--------------------------------------------------- */
-#philosophyBox{
-    background-image: url('../images/about/team.jpg');
-    background-size: cover;
-    color: white;
-    height: 500px;
-}
 
-#philosophyBox>div{
-    background: rgba(30,30,30,0.34);
-    padding: 10px;
-    width: 400px;
-    height: 500px;
-}
-
-/* PRESS
+/*Carousals Full Page
 ------------------------- */
-.pressBox{
-    padding: 30px 10px;
-    margin: auto;
+.carousal{
+    height: 100%;
+    clear: both;
+    display: block;
 }
 
-.pressBox h3{
-    margin-bottom: 20px;
+.carousal .item{
+    width: 100%;
 }
 
-.pressBox a {
-    text-decoration: none;
+.carousal .item img{
+    width: 100%;
+    max-height: 550px;
+    object-fit:cover;
 }
 
-.pressCard{
-    text-align: center;
-    background-color: #ffffff;
-    height: 280px;
-    border: 1px solid #efefef;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.pressCard img{
-    width: 150px;
-    margin: auto;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.pressCard .pressLink{
-    color: black;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-/*2013 & 2014 page image-carousals
-------------------------- */
-.carousal img{
-    width:100%;
-    margin: 0 auto 15px;
+.carousal .item .content{
+    background: rgba(255,255,255,0.9);
+    margin: 0;
+    padding: 1em 3em;
+    font-size: 1em;
+    color: #444;
+    position: absolute;
+    top: 400px;
+    height: 150px;
 }
 
 .carousal .slick-prev{
-    left: 75px;
+    left: 20px;
+    z-index: 2;
 }
 
 .carousal .slick-next{
-    right: 75px;
+    right: 20px;
+    z-index: 2;
 }
+
+/*Partners*/
+#partners .ui.card.very.big .image img.content{
+    height: auto;
+}
+
+
+/* PRESS
+------------------------- */
+
 
 /* JOINUS PAGE
 -------------------------------------------------- */
 #joinusBox{
     width:760px;
     margin: auto;
-}
-
-/* FOOTER CSS
--------------------------------------------------- */
-#footer{
-    margin-top:50px;
-    background : #1abc9c;
-    height: 100px;
-    padding-top:30px;
-    text-align: center;
-}
-
-#footer a{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
-@media(max-width:767px){
-    .copyright{display:none;}
-}
-
-.contactIcon{
-    margin:10px 10px;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.copyrightLogo{
-    margin-right: 30px;
-    color: white;
 }

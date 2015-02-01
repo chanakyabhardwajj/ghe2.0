@@ -1,5 +1,17 @@
 $(document).ready(function(){
-  $('#homeCarousal').slick({
+  $('.ui.dropdown').dropdown();
+
+  $(".ui.card.normal .description").dotdotdot({
+
+  });
+
+  $('.right.menu.open').on("click",function(e){
+        e.preventDefault();
+    $('.ui.vertical.menu').toggle();
+  });
+
+
+  $('.carousal').slick({
     adaptiveHeight : false,
     autoplay : true,
     arrows : true,
@@ -7,10 +19,23 @@ $(document).ready(function(){
     pauseOnHover : false
   });
 
-  $('#storiesBox').slick({
+  $('.smallCarousal').slick({
     adaptiveHeight : true,
+    mobileFirst : true,
     autoplay : false,
-    arrows: false
+    arrows : false,
+    dots : true,
+    slide : ".smallCarousal img",
+    infinite : true,
+    pauseOnHover : false,
+    fade: false
+  });
+
+  $('#storiesBox').slick({
+    adaptiveHeight : false,
+    autoplay : false,
+    arrows: false,
+    mobileFirst : true
   });
 
   $('.storyPrevIcon').click(function(){
@@ -21,28 +46,10 @@ $(document).ready(function(){
     $('#storiesBox').slickNext();  
   });
 
-  $("#carousal2013").slick({
-    adaptiveHeight : false,
-    autoplay : true,
-    arrows : true,
-    infinite : true,
-  });
-
   $("#carousal2014").slick({
     adaptiveHeight : false,
     autoplay : true,
     arrows : true,
     infinite : true,
-  });
-
-  
-
-  $("#notSidebar").click(function(e){
-    $('#main').removeClass("sidebar-visible");
-  });
-
-  $("#toggleSidebar").click(function(e){
-    $('#main').toggleClass("sidebar-visible");
-    e.stopPropagation();
   });
 });

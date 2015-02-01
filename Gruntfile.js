@@ -1,16 +1,19 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     clean: {
       dev: ["build/*", "!build/images"],
       prod: ["build"]
     },
+
     copy: {
       main: {
         src: ['css/**', 'fonts/**', 'js/**', 'slick/**'],
         dest: 'build/',
       },
     },
+
     includes: {
       build: {
         cwd: '.',
@@ -23,6 +26,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     watch: {
       scripts: {
         files: ['*.html', 'css/*', 'js/*', 'partials/*'],
@@ -34,6 +38,7 @@ module.exports = function(grunt) {
         },
       },
     },
+
     imagemin: {                          // Task
       dynamic: {                         // Another target
         files: [{
@@ -47,11 +52,12 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-includes');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks('grunt-includes');
+grunt.loadNpmTasks('grunt-contrib-clean');
+grunt.loadNpmTasks('grunt-contrib-copy');
+grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks( "grunt-bake" );
 
   // Default task(s) : use this for development work.
   grunt.registerTask('default', ['clean:dev', 'copy', 'includes', 'watch']);

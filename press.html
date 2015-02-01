@@ -4,27 +4,48 @@
     include "metaheader.html"
 </head>
 <body>
-    include "undecidedmodal.html"
-    <div id="main">
-        include "sidebar.html"
+    include "header.html"
+    <div class="ui main doubling stackable grid">
+        <h2 class="ui header centered">In the news 2014</h2>
+        <div class="four column row">
+            <div class="column">
+                <a href="http://timesofindia.indiatimes.com/city/chandigarh/Let-there-be-light/articleshow/43474320.cms" target="_blank" class="ui card">
+                    <div class="image">
+                        <img src="./images/press/2014/toi.png">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            Let There Be Light!
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-        <div class="row">
-            <div class="col-xs-12" id="notSidebar">
-                <img src="./images/logoweb.png" id="toggleSidebar">
+            <div class="column">
+                <a href="http://articles.economictimes.indiatimes.com/2014-10-09/news/54827718_1_long-weekend-global-himalayan-expedition-work-hours" target="_blank"  class="ui card">
+                    <div class="image">
+                        <img src="./images/press/2014/et.png">
+                    </div>
+                    <div class="content"> 
+                        <div class="description">
+                            Have a long weekend? Pursue a hobby 
+                        </div> 
+                    </div>
+                </a>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </div>
+    <div id="main">
+
 
                 <div class="row">
-                    <h2 class="center both sectionTitle">In the news - 2014</h2>
-                    <div class="pressCard col-md-3">
-                        <a href="http://timesofindia.indiatimes.com/city/chandigarh/Let-there-be-light/articleshow/43474320.cms" target="_blank">
-                            <img src="./images/press/2014/toi.png" class=" img-responsive pressLogo">
-                            <div class="pressLink"> Let There Be Light! </div> </a>
-                    </div>
 
-                    <div class="pressCard col-md-3">
-                        <a href="http://articles.economictimes.indiatimes.com/2014-10-09/news/54827718_1_long-weekend-global-himalayan-expedition-work-hours" target="_blank">
-                            <img src="./images/press/2014/et.png" class=" img-responsive pressLogo">
-                            <div class="pressLink"> Have a long weekend? Pursue a hobby </div> </a>
-                    </div>
 
                     <div class="pressCard col-md-3">
                         <a href="http://www.emirates247.com/news/emirates/emirati-mariam-al-hammadi-raises-uae-flag-in-the-himalayas-2014-10-10-1.565722" target="_blank">
@@ -88,16 +109,18 @@
                     </div>
                 </div>
 
-                <div class="row">
+
                     <h2 class="center both sectionTitle">In the news - 2013</h2>
+                    
                     <div class="pressCard col-md-3">
-                    <a href="http://www.nextbigwhat.com/bringing-walls-seclusion-children-leh-paras-loomba-doer-297/" target="_blank">
-                        <img src="./images/press/2013/nextbigwhat.png" class=" img-responsive pressLogo">
-                        <div class="pressLink">
-                            How Children in Remote Leh are Plugging Into The Information Highway
-                        </div>
-                    </a>
-                </div>
+                        <a href="http://www.nextbigwhat.com/bringing-walls-seclusion-children-leh-paras-loomba-doer-297/" target="_blank">
+                            <img src="./images/press/2013/nextbigwhat.png" class=" img-responsive pressLogo"/>
+                            <div class="pressLink">
+                                How Children in Remote Leh are Plugging Into The Information Highway
+                            </div>
+                        </a>
+                    </div>
+
                     <div class="pressCard col-md-3">
                         <a href="http://indiatoday.intoday.in/story/world-third-education-base-set-up-in-ladakh/1/304068.html" target="_blank">
 
@@ -108,6 +131,7 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="pressCard col-md-3">
                         <a href="http://www.hindustantimes.com/india-news/newdelhi/solar-base-to-come-up-on-roof-of-the-world/article1-1105857.aspx" target="_blank">
 
@@ -249,9 +273,8 @@
                             </div>
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
+
+
     </div>
 include "footer.html"
 include "scripts.html"
