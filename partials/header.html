@@ -1,6 +1,6 @@
 <div class="ui grid">
     <div class="computer tablet only row">
-        <div id="bigNavbar" class="ui fixed menu navbar page grid">              
+        <div id="bigNavbar" class="ui fixed menu navbar page grid">
             <a class="item" href="./index.html">Home</a>
             <a class="item" href="./join.html">Join Us - GHE 2015</a>
 
@@ -30,17 +30,20 @@
                 </div>
             </div>
 
+            <a class="item" href="#" id="contactMenuItem">Contact</a>
+
             <div class="right menu">
                 <a class="item" target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition"><em class="icon-facebook"></em></a>
                 <a class="item" target="_blank" href="https://twitter.com/ghe_connect"><em class="icon-twitter"></em></a>
                 <a class="item" href="mailto:info@ghe.co.in"><em class="icon-envelope"></em> info@ghe.co.in</a>
+                <a class="item" href="tel:+919910089129"><em class="icon-phone"></em> +91 991 008 9129</a>
             </div>
 
         </div>
     </div>
-    <div class="mobile only row">
+    <div class="mobile only row"> 
         <div class="ui fixed inverted navbar menu">
-            <a href="" class="brand item">GHE</a>
+            <a href="./index.html" class="brand item" id="mobileLogoBox"><img id="mobileLogo" src="./images/logoweb.png"/></a>
             <div class="right menu open">
                 <a href="" class="menu item">
                     <em class="icon-reorder"></em>
@@ -85,7 +88,32 @@
                 <div class="item">
                     <a href="mailto:info@ghe.co.in">Mail <em class="icon-envelope"></em> info@ghe.co.in</a>
                 </div>
+                <div class="item">
+                    <a href="tel:+919910089129">Phone <em class="icon-phone"></em> +91 991 008 9129</a>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- This is the modal for contact information-->
+<div id="contactModal" class="ui basic modal">
+    <i class="close icon"></i>
+    <div class="header">
+        Contact us
+    </div>
+    <div class="content">
+        <div class="ui large label">
+            <a target="_blank" href="https://www.facebook.com/GlobalHimalayanExpedition">Facebook <em class="icon-facebook"></em></a>
+        </div>
+        <div class="ui large label">
+            <a target="_blank" href="https://twitter.com/ghe_connect">Twitter <em class="icon-twitter"></em></a>
+        </div>
+        <div class="ui large label">
+            <a href="mailto:info@ghe.co.in">Mail <em class="icon-envelope"></em> info@ghe.co.in</a>
+        </div>
+        <div class="ui large label">
+            <a href="">Phone <em class="icon-phone"></em> +91 991 008 9129</a>
         </div>
     </div>
 </div>

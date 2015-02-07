@@ -40,8 +40,12 @@ module.exports = function(grunt) {
     },
 
     imagemin: {                          // Task
-      dynamic: {                         // Another target
-        files: [{
+      dynamic: {
+        options: {                       // Target options
+          optimizationLevel: 7,
+          progressive: true
+      },                         // Another target
+      files: [{
           expand: true,                  // Enable dynamic expansion
           cwd: 'images/',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,jpeg,JPG}'],   // Actual patterns to match

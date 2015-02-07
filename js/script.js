@@ -1,13 +1,17 @@
 $(document).ready(function(){
+  $('.ui.modal').modal();
   $('.ui.dropdown').dropdown();
 
-  $(".ui.card.normal .description").dotdotdot({
-
-  });
+  $(".ui.card.normal .description").dotdotdot({});
 
   $('.right.menu.open').on("click",function(e){
-        e.preventDefault();
+    e.preventDefault();
     $('.ui.vertical.menu').toggle();
+  });
+
+  $("#contactMenuItem").click(function(e){
+    e.preventDefault();
+    $("#contactModal").modal('show');
   });
 
 
