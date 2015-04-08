@@ -109,6 +109,24 @@ body{
     height: auto;
 }
 
+.ui.card.press .image {
+    background: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.ui.card.press .image img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: auto;
+    object-fit: contain;
+}
+
+.ui.card.press .content .header {
+    margin: auto;
+    text-align: center;
+}
+
 .ui.items>.item {
     background: white;
 }
