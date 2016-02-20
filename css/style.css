@@ -63,6 +63,9 @@ body{
     box-shadow: none;
     height:450px;
 }
+.ui.card>.image {
+    text-align: center;
+}
 
 .ui.card.normal .image img {
     height: 200px;
@@ -187,6 +190,7 @@ body{
     text-align: center;
     vertical-align: middle;
     margin-top: 50px;
+    text-shadow: 3px 3px 3px black;
 }
 
 #pageTitle h1{
