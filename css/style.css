@@ -167,15 +167,16 @@ body{
 /*Page Title Box
 -------------------------------------------------- */
 #pageTitle{
-    position: absolute;
+    /*position: absolute;*/
     top:0px;
     width:100%;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items:flex-start;
-    color: white;
-    text-shadow: 3px 3px 3px #555;
+    color: black;
+    /*text-shadow: 3px 3px 3px #555;*/
+    text-shadow: none;
 }
 
 @media screen and (max-width: 768px){
@@ -190,7 +191,8 @@ body{
     text-align: center;
     vertical-align: middle;
     margin-top: 50px;
-    text-shadow: 3px 3px 3px black;
+    /*text-shadow: 3px 3px 3px black;*/
+    text-shadow: none;
 }
 
 #pageTitle h1{
@@ -228,6 +230,24 @@ body{
 
 .social-wrapper *{
     width : 100% !important;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+    margin-top: 50px;
+	overflow:hidden;
+    clear: both;
+    display: block;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:10%;
+	width:80%;
+	height:80%;
 }
 
 /*Carousals Full Page
