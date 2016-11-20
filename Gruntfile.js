@@ -3,13 +3,13 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      dev: ["build/*", "!build/images"],
+      dev: ["build"],
       prod: ["build"]
     },
 
     copy: {
       main: {
-        src: ['css/**', 'fonts/**', 'js/**', 'slick/**'],
+        src: ['css/**', 'fonts/**', 'js/**', 'slick/**', 'images/**'],
         dest: 'build/',
       },
     },

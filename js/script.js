@@ -9,10 +9,10 @@ $(document).ready(function(){
     $('.ui.vertical.menu').toggle();
   });
 
-  $("#contactMenuItem").click(function(e){
-    e.preventDefault();
-    $("#contactModal").modal('show');
-  });
+  // $("#contactMenuItem").click(function(e){
+  //   e.preventDefault();
+  //   $("#contactModal").modal('show');
+  // });
 
 
   $('.carousal').slick({
