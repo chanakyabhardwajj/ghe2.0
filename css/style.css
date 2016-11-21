@@ -11,7 +11,7 @@ body{
 
 .ui.grid.main{
     margin-top: 70px;
-    font-size: 1em;
+    font-size: 14px;
 }
 
 .mobile.row{
@@ -62,6 +62,12 @@ body{
 
 .ui.card.social{
     text-align: center;
+}
+
+.ui.card.short {
+    margin: 0 auto;
+    box-shadow: none;
+    height:350px;
 }
 
 .ui.card.normal{
