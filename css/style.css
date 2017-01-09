@@ -311,8 +311,8 @@ body{
 }
 
 /*Partners*/
-#partners .ui.card.very.big .image img.content{
-    height: auto;
+.ui.card.big.partner .image img {
+    object-fit: contain;
 }
 
 
