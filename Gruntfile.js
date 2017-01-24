@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         tasks: ['default'],
         options: {
           interrupt: true,
-          spawn:false,
+          spawn: false,
           livereload: true
         },
       },
@@ -44,8 +44,8 @@ module.exports = function(grunt) {
         options: {                       // Target options
           optimizationLevel: 7,
           progressive: true
-      },                         // Another target
-      files: [{
+        },                         // Another target
+        files: [{
           expand: true,                  // Enable dynamic expansion
           cwd: 'images/',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,jpeg,JPG}'],   // Actual patterns to match
@@ -56,12 +56,12 @@ module.exports = function(grunt) {
 
   });
 
-grunt.loadNpmTasks('grunt-includes');
-grunt.loadNpmTasks('grunt-contrib-clean');
-grunt.loadNpmTasks('grunt-contrib-copy');
-grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks( "grunt-bake" );
+  grunt.loadNpmTasks('grunt-includes');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks("grunt-bake");
 
   // Default task(s) : use this for development work.
   grunt.registerTask('default', ['clean:dev', 'copy', 'includes', 'watch']);
