@@ -75,6 +75,11 @@ body{
     box-shadow: none;
     height:450px;
 }
+
+.ui.card>.content>.description, 
+.ui.cards>.card>.content>.description {
+    color: black;
+}
 .ui.card>.image {
     text-align: center;
 }
