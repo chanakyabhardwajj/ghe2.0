@@ -69,5 +69,5 @@ module.exports = function (grunt) {
 
   // Prod task(s) : use this before uploading to prod.
   // Minifies images.
-  grunt.registerTask('prod', ['clean:prod', 'imagemin', 'copy', 'includes']);
+  grunt.registerTask('prod', ['clean:prod',  'copy', 'includes']);
 };

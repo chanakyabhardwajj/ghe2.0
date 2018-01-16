@@ -16,8 +16,8 @@ $(document).ready(function(){
 
 
   $('.carousal').slick({
-    adaptiveHeight : false,
-    autoplay : true,
+    adaptiveHeight : true,
+    autoplay : false,
     arrows : true,
     infinite : true,
     pauseOnHover : false
